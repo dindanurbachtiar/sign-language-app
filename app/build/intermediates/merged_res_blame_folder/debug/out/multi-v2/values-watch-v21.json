@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.isyaratpintar.app-mergeDebugResources-33:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.isyaratpintar.app-mergeDebugResources-2:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\186eb975c6aa24cc77a039791c897b47\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "D:\\android\\.gradle\\caches\\transforms-3\\186eb975c6aa24cc77a039791c897b47\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

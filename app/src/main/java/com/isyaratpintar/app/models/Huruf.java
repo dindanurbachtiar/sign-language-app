@@ -2,7 +2,7 @@ package com.isyaratpintar.app.models;
 
 public class Huruf {
     private String nama;
-    private int gambarResId;
+    private int gambarResId; // Ini akan menyimpan ID resource drawable (misal: R.drawable.a)
     private int suaraResId;
 
     private String deskripsi;
@@ -24,6 +24,11 @@ public class Huruf {
 
     public int getGambarResId() {
         return gambarResId;
+    }
+
+    // Pastikan SETTER INI ADA dan benar
+    public void setGambarResId(int gambarResId) {
+        this.gambarResId = gambarResId;
     }
 
     public int getSuaraResId() {

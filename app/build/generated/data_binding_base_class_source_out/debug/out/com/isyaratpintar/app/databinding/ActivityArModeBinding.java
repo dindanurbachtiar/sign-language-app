@@ -23,19 +23,28 @@ public final class ActivityArModeBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnAnimasiAr;
+
+  @NonNull
   public final ImageButton btnBack;
 
   @NonNull
-  public final Button btnKembali;
+  public final Button btnKembaliDisplay;
 
   @NonNull
-  public final Button btnPilihHuruf;
+  public final Button btnKembaliScan;
 
   @NonNull
   public final Button btnScanKartu;
 
   @NonNull
   public final Button btnSimulasiDeteksi;
+
+  @NonNull
+  public final Button btnSuaraAr;
+
+  @NonNull
+  public final Button btnUlangiAr;
 
   @NonNull
   public final CardView cardDisplay;
@@ -47,25 +56,34 @@ public final class ActivityArModeBinding implements ViewBinding {
   public final CardView cardScanning;
 
   @NonNull
+  public final TextView tvDeskripsiAr;
+
+  @NonNull
   public final TextView tvHurufAr;
 
   @NonNull
   public final TextView tvStatus;
 
-  private ActivityArModeBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
-      @NonNull Button btnKembali, @NonNull Button btnPilihHuruf, @NonNull Button btnScanKartu,
-      @NonNull Button btnSimulasiDeteksi, @NonNull CardView cardDisplay,
-      @NonNull CardView cardInstructions, @NonNull CardView cardScanning,
-      @NonNull TextView tvHurufAr, @NonNull TextView tvStatus) {
+  private ActivityArModeBinding(@NonNull LinearLayout rootView, @NonNull Button btnAnimasiAr,
+      @NonNull ImageButton btnBack, @NonNull Button btnKembaliDisplay,
+      @NonNull Button btnKembaliScan, @NonNull Button btnScanKartu,
+      @NonNull Button btnSimulasiDeteksi, @NonNull Button btnSuaraAr, @NonNull Button btnUlangiAr,
+      @NonNull CardView cardDisplay, @NonNull CardView cardInstructions,
+      @NonNull CardView cardScanning, @NonNull TextView tvDeskripsiAr, @NonNull TextView tvHurufAr,
+      @NonNull TextView tvStatus) {
     this.rootView = rootView;
+    this.btnAnimasiAr = btnAnimasiAr;
     this.btnBack = btnBack;
-    this.btnKembali = btnKembali;
-    this.btnPilihHuruf = btnPilihHuruf;
+    this.btnKembaliDisplay = btnKembaliDisplay;
+    this.btnKembaliScan = btnKembaliScan;
     this.btnScanKartu = btnScanKartu;
     this.btnSimulasiDeteksi = btnSimulasiDeteksi;
+    this.btnSuaraAr = btnSuaraAr;
+    this.btnUlangiAr = btnUlangiAr;
     this.cardDisplay = cardDisplay;
     this.cardInstructions = cardInstructions;
     this.cardScanning = cardScanning;
+    this.tvDeskripsiAr = tvDeskripsiAr;
     this.tvHurufAr = tvHurufAr;
     this.tvStatus = tvStatus;
   }
@@ -97,21 +115,27 @@ public final class ActivityArModeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_animasi_ar;
+      Button btnAnimasiAr = ViewBindings.findChildViewById(rootView, id);
+      if (btnAnimasiAr == null) {
+        break missingId;
+      }
+
       id = R.id.btn_back;
       ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
         break missingId;
       }
 
-      id = R.id.btn_kembali;
-      Button btnKembali = ViewBindings.findChildViewById(rootView, id);
-      if (btnKembali == null) {
+      id = R.id.btn_kembali_display;
+      Button btnKembaliDisplay = ViewBindings.findChildViewById(rootView, id);
+      if (btnKembaliDisplay == null) {
         break missingId;
       }
 
-      id = R.id.btn_pilih_huruf;
-      Button btnPilihHuruf = ViewBindings.findChildViewById(rootView, id);
-      if (btnPilihHuruf == null) {
+      id = R.id.btn_kembali_scan;
+      Button btnKembaliScan = ViewBindings.findChildViewById(rootView, id);
+      if (btnKembaliScan == null) {
         break missingId;
       }
 
@@ -124,6 +148,18 @@ public final class ActivityArModeBinding implements ViewBinding {
       id = R.id.btn_simulasi_deteksi;
       Button btnSimulasiDeteksi = ViewBindings.findChildViewById(rootView, id);
       if (btnSimulasiDeteksi == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_suara_ar;
+      Button btnSuaraAr = ViewBindings.findChildViewById(rootView, id);
+      if (btnSuaraAr == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_ulangi_ar;
+      Button btnUlangiAr = ViewBindings.findChildViewById(rootView, id);
+      if (btnUlangiAr == null) {
         break missingId;
       }
 
@@ -145,6 +181,12 @@ public final class ActivityArModeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_deskripsi_ar;
+      TextView tvDeskripsiAr = ViewBindings.findChildViewById(rootView, id);
+      if (tvDeskripsiAr == null) {
+        break missingId;
+      }
+
       id = R.id.tv_huruf_ar;
       TextView tvHurufAr = ViewBindings.findChildViewById(rootView, id);
       if (tvHurufAr == null) {
@@ -157,8 +199,9 @@ public final class ActivityArModeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityArModeBinding((LinearLayout) rootView, btnBack, btnKembali, btnPilihHuruf,
-          btnScanKartu, btnSimulasiDeteksi, cardDisplay, cardInstructions, cardScanning, tvHurufAr,
+      return new ActivityArModeBinding((LinearLayout) rootView, btnAnimasiAr, btnBack,
+          btnKembaliDisplay, btnKembaliScan, btnScanKartu, btnSimulasiDeteksi, btnSuaraAr,
+          btnUlangiAr, cardDisplay, cardInstructions, cardScanning, tvDeskripsiAr, tvHurufAr,
           tvStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);

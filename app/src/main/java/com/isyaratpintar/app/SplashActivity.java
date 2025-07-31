@@ -53,11 +53,11 @@ public class SplashActivity extends AppCompatActivity {
         if (handler != null && runnable != null) {
             handler.removeCallbacks(runnable);
         }
-        
+
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
-        
+
         // Animasi transisi
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }

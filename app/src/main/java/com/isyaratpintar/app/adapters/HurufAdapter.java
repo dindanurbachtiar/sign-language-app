@@ -42,7 +42,9 @@ public class HurufAdapter extends RecyclerView.Adapter<HurufAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Huruf huruf = hurufList.get(position);
         holder.tvNamaHuruf.setText(huruf.getNama());
-        holder.ivHuruf.setImageResource(huruf.getGambarResId());
+        // Jika Anda memiliki gambar drawable untuk setiap huruf, set di sini
+        // holder.ivHuruf.setImageResource(huruf.getGambarResId());
+        // Untuk saat ini, asumsikan gambarResId belum digunakan di item_huruf.xml atau tidak penting
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onHurufClick(huruf);
@@ -57,12 +59,12 @@ public class HurufAdapter extends RecyclerView.Adapter<HurufAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvNamaHuruf;
-        ImageView ivHuruf;
+        ImageView ivHuruf; // Jika ingin menampilkan gambar di item_huruf
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvNamaHuruf = itemView.findViewById(R.id.tvNamaHuruf);
-            ivHuruf = itemView.findViewById(R.id.ivHuruf);
+            ivHuruf = itemView.findViewById(R.id.ivHuruf); // Pastikan ID ini ada di item_huruf.xml
         }
     }
 }

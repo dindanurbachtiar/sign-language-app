@@ -28,15 +28,6 @@ public final class ActivityKuisBinding implements ViewBinding {
   public final ImageButton btnBack;
 
   @NonNull
-  public final Button btnHurufKeIsyarat;
-
-  @NonNull
-  public final Button btnIsyaratKeHuruf;
-
-  @NonNull
-  public final Button btnModeCampuran;
-
-  @NonNull
   public final Button btnPilihan1;
 
   @NonNull
@@ -47,9 +38,6 @@ public final class ActivityKuisBinding implements ViewBinding {
 
   @NonNull
   public final Button btnPilihan4;
-
-  @NonNull
-  public final CardView cardModeSelection;
 
   @NonNull
   public final CardView cardQuiz;
@@ -73,22 +61,16 @@ public final class ActivityKuisBinding implements ViewBinding {
   public final TextView tvSkor;
 
   private ActivityKuisBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
-      @NonNull Button btnHurufKeIsyarat, @NonNull Button btnIsyaratKeHuruf,
-      @NonNull Button btnModeCampuran, @NonNull Button btnPilihan1, @NonNull Button btnPilihan2,
-      @NonNull Button btnPilihan3, @NonNull Button btnPilihan4, @NonNull CardView cardModeSelection,
-      @NonNull CardView cardQuiz, @NonNull ImageView ivGambarIsyarat,
+      @NonNull Button btnPilihan1, @NonNull Button btnPilihan2, @NonNull Button btnPilihan3,
+      @NonNull Button btnPilihan4, @NonNull CardView cardQuiz, @NonNull ImageView ivGambarIsyarat,
       @NonNull ProgressBar progressKuis, @NonNull TextView tvJudulKuis,
       @NonNull TextView tvNomorSoal, @NonNull TextView tvPertanyaan, @NonNull TextView tvSkor) {
     this.rootView = rootView;
     this.btnBack = btnBack;
-    this.btnHurufKeIsyarat = btnHurufKeIsyarat;
-    this.btnIsyaratKeHuruf = btnIsyaratKeHuruf;
-    this.btnModeCampuran = btnModeCampuran;
     this.btnPilihan1 = btnPilihan1;
     this.btnPilihan2 = btnPilihan2;
     this.btnPilihan3 = btnPilihan3;
     this.btnPilihan4 = btnPilihan4;
-    this.cardModeSelection = cardModeSelection;
     this.cardQuiz = cardQuiz;
     this.ivGambarIsyarat = ivGambarIsyarat;
     this.progressKuis = progressKuis;
@@ -131,24 +113,6 @@ public final class ActivityKuisBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_huruf_ke_isyarat;
-      Button btnHurufKeIsyarat = ViewBindings.findChildViewById(rootView, id);
-      if (btnHurufKeIsyarat == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_isyarat_ke_huruf;
-      Button btnIsyaratKeHuruf = ViewBindings.findChildViewById(rootView, id);
-      if (btnIsyaratKeHuruf == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_mode_campuran;
-      Button btnModeCampuran = ViewBindings.findChildViewById(rootView, id);
-      if (btnModeCampuran == null) {
-        break missingId;
-      }
-
       id = R.id.btn_pilihan_1;
       Button btnPilihan1 = ViewBindings.findChildViewById(rootView, id);
       if (btnPilihan1 == null) {
@@ -170,12 +134,6 @@ public final class ActivityKuisBinding implements ViewBinding {
       id = R.id.btn_pilihan_4;
       Button btnPilihan4 = ViewBindings.findChildViewById(rootView, id);
       if (btnPilihan4 == null) {
-        break missingId;
-      }
-
-      id = R.id.card_mode_selection;
-      CardView cardModeSelection = ViewBindings.findChildViewById(rootView, id);
-      if (cardModeSelection == null) {
         break missingId;
       }
 
@@ -221,10 +179,9 @@ public final class ActivityKuisBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityKuisBinding((LinearLayout) rootView, btnBack, btnHurufKeIsyarat,
-          btnIsyaratKeHuruf, btnModeCampuran, btnPilihan1, btnPilihan2, btnPilihan3, btnPilihan4,
-          cardModeSelection, cardQuiz, ivGambarIsyarat, progressKuis, tvJudulKuis, tvNomorSoal,
-          tvPertanyaan, tvSkor);
+      return new ActivityKuisBinding((LinearLayout) rootView, btnBack, btnPilihan1, btnPilihan2,
+          btnPilihan3, btnPilihan4, cardQuiz, ivGambarIsyarat, progressKuis, tvJudulKuis,
+          tvNomorSoal, tvPertanyaan, tvSkor);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

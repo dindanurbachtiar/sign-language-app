@@ -13,7 +13,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,12 +51,11 @@
                 android:layout_height="48dp"
                 android:background="@drawable/circle_button_background"
                 android:src="@drawable/ic_person"
-                android:contentDescription="Profil Pengguna"
+                android:contentDescription="@string/profil_pengguna"
                 app:tint="@color/blue_500" />
 
         </LinearLayout>
 
-        <!-- Progress Card -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -141,7 +139,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Menu Grid -->
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,7 +148,6 @@
             android:columnOrderPreserved="false"
             android:useDefaultMargins="true">
 
-            <!-- Belajar Huruf -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_belajar_huruf"
                 android:layout_width="0dp"
@@ -177,6 +173,7 @@
                         android:layout_height="32dp"
                         android:src="@drawable/ic_book"
                         android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/icon_belajar_huruf"
                         app:tint="@color/white" />
 
                     <TextView
@@ -199,7 +196,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- AR Mode -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_ar_mode"
                 android:layout_width="0dp"
@@ -225,6 +221,7 @@
                         android:layout_height="32dp"
                         android:src="@drawable/ic_camera"
                         android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/icon_ar_mode"
                         app:tint="@color/white" />
 
                     <TextView
@@ -247,7 +244,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Kuis -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_kuis"
                 android:layout_width="0dp"
@@ -273,6 +269,7 @@
                         android:layout_height="32dp"
                         android:src="@drawable/ic_quiz"
                         android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/icon_kuis"
                         app:tint="@color/white" />
 
                     <TextView
@@ -295,7 +292,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Tentang -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_tentang"
                 android:layout_width="0dp"
@@ -321,6 +317,7 @@
                         android:layout_height="32dp"
                         android:src="@drawable/ic_info"
                         android:layout_marginBottom="8dp"
+                        android:contentDescription="@string/icon_tentang"
                         app:tint="@color/white" />
 
                     <TextView

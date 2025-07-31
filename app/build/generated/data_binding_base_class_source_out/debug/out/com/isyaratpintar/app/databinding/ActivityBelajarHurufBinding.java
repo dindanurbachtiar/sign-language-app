@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -28,6 +29,9 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
   public final Button btnDengarSuara;
 
   @NonNull
+  public final Button btnResetProgress;
+
+  @NonNull
   public final Button btnSebelumnya;
 
   @NonNull
@@ -37,10 +41,10 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
   public final Button btnTandaiSelesai;
 
   @NonNull
-  public final TextView tvDeskripsi;
+  public final ImageView ivGestureImage;
 
   @NonNull
-  public final TextView tvGestureEmoji;
+  public final TextView tvDeskripsi;
 
   @NonNull
   public final TextView tvHuruf;
@@ -49,17 +53,19 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
   public final TextView tvTips;
 
   private ActivityBelajarHurufBinding(@NonNull ScrollView rootView, @NonNull ImageButton btnBack,
-      @NonNull Button btnDengarSuara, @NonNull Button btnSebelumnya, @NonNull Button btnSelanjutnya,
-      @NonNull Button btnTandaiSelesai, @NonNull TextView tvDeskripsi,
-      @NonNull TextView tvGestureEmoji, @NonNull TextView tvHuruf, @NonNull TextView tvTips) {
+      @NonNull Button btnDengarSuara, @NonNull Button btnResetProgress,
+      @NonNull Button btnSebelumnya, @NonNull Button btnSelanjutnya,
+      @NonNull Button btnTandaiSelesai, @NonNull ImageView ivGestureImage,
+      @NonNull TextView tvDeskripsi, @NonNull TextView tvHuruf, @NonNull TextView tvTips) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnDengarSuara = btnDengarSuara;
+    this.btnResetProgress = btnResetProgress;
     this.btnSebelumnya = btnSebelumnya;
     this.btnSelanjutnya = btnSelanjutnya;
     this.btnTandaiSelesai = btnTandaiSelesai;
+    this.ivGestureImage = ivGestureImage;
     this.tvDeskripsi = tvDeskripsi;
-    this.tvGestureEmoji = tvGestureEmoji;
     this.tvHuruf = tvHuruf;
     this.tvTips = tvTips;
   }
@@ -103,6 +109,12 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_reset_progress;
+      Button btnResetProgress = ViewBindings.findChildViewById(rootView, id);
+      if (btnResetProgress == null) {
+        break missingId;
+      }
+
       id = R.id.btn_sebelumnya;
       Button btnSebelumnya = ViewBindings.findChildViewById(rootView, id);
       if (btnSebelumnya == null) {
@@ -121,15 +133,15 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_deskripsi;
-      TextView tvDeskripsi = ViewBindings.findChildViewById(rootView, id);
-      if (tvDeskripsi == null) {
+      id = R.id.iv_gesture_image;
+      ImageView ivGestureImage = ViewBindings.findChildViewById(rootView, id);
+      if (ivGestureImage == null) {
         break missingId;
       }
 
-      id = R.id.tv_gesture_emoji;
-      TextView tvGestureEmoji = ViewBindings.findChildViewById(rootView, id);
-      if (tvGestureEmoji == null) {
+      id = R.id.tv_deskripsi;
+      TextView tvDeskripsi = ViewBindings.findChildViewById(rootView, id);
+      if (tvDeskripsi == null) {
         break missingId;
       }
 
@@ -146,8 +158,8 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
       }
 
       return new ActivityBelajarHurufBinding((ScrollView) rootView, btnBack, btnDengarSuara,
-          btnSebelumnya, btnSelanjutnya, btnTandaiSelesai, tvDeskripsi, tvGestureEmoji, tvHuruf,
-          tvTips);
+          btnResetProgress, btnSebelumnya, btnSelanjutnya, btnTandaiSelesai, ivGestureImage,
+          tvDeskripsi, tvHuruf, tvTips);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

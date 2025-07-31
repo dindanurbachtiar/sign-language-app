@@ -1,7 +1,6 @@
 package com.isyaratpintar.app;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -12,6 +11,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.isyaratpintar.app.database.DatabaseHelper;
+import com.isyaratpintar.app.models.UserProgress;
+
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvSelamatDatang, tvProgressHuruf, tvTotalPoin;
     private ProgressBar progressBarPembelajaran;
     private ImageButton btnProfil;
-    private SharedPreferences sharedPreferences;
+    private DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initViews();
-        initSharedPreferences();
+        initDatabase();
         setupClickListeners();
-        loadUserProgress();
         setGreetingMessage();
     }
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         cardARMode = findViewById(R.id.card_ar_mode);
         cardKuis = findViewById(R.id.card_kuis);
         cardTentang = findViewById(R.id.card_tentang);
-        
+
         tvSelamatDatang = findViewById(R.id.tv_selamat_datang);
         tvProgressHuruf = findViewById(R.id.tv_progress_huruf);
         tvTotalPoin = findViewById(R.id.tv_total_poin);
@@ -47,66 +48,60 @@ public class MainActivity extends AppCompatActivity {
         btnProfil = findViewById(R.id.btn_profil);
     }
 
-    private void initSharedPreferences() {
-        sharedPreferences = getSharedPreferences("IsyaratPintarPrefs", MODE_PRIVATE);
+    private void initDatabase() {
+        databaseHelper = new DatabaseHelper(this);
     }
 
     private void setupClickListeners() {
-        cardBelajarHuruf.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BelajarHurufActivity.class);
-                startActivity(intent);
-            }
+        cardBelajarHuruf.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, BelajarHurufActivity.class);
+            startActivity(intent);
         });
 
-        cardARMode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ARModeActivity.class);
-                startActivity(intent);
-            }
+        cardARMode.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ARModeActivity.class);
+            startActivity(intent);
         });
 
-        cardKuis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, KuisActivity.class);
-                startActivity(intent);
-            }
+        cardKuis.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, KuisActivity.class);
+            // Tambahkan ekstra untuk langsung memulai kuis "isyarat_ke_huruf"
+            intent.putExtra("kuis_mode", "isyarat_ke_huruf");
+            startActivity(intent);
         });
 
-        cardTentang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TentangActivity.class);
-                startActivity(intent);
-            }
+        cardTentang.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TentangActivity.class);
+            startActivity(intent);
         });
 
-        btnProfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Fitur Profil akan segera hadir!", Toast.LENGTH_SHORT).show();
-            }
+        btnProfil.setOnClickListener(v -> {
+            Toast.makeText(MainActivity.this, "Fitur Profil akan segera hadir!", Toast.LENGTH_SHORT).show();
         });
     }
 
     private void loadUserProgress() {
-        int hurufDipelajari = sharedPreferences.getInt("huruf_dipelajari", 0);
-        int totalPoin = sharedPreferences.getInt("total_poin", 0);
-        
-        tvProgressHuruf.setText(hurufDipelajari + "/26 Huruf");
-        tvTotalPoin.setText(String.valueOf(totalPoin));
-        
-        int progressPercentage = (hurufDipelajari * 100) / 26;
-        progressBarPembelajaran.setProgress(progressPercentage);
+        UserProgress userProgress = databaseHelper.getUserProgress();
+        if (userProgress != null) {
+            int hurufDipelajari = userProgress.getHurufDipelajari();
+            int totalPoin = userProgress.getTotalPoin();
+
+            tvProgressHuruf.setText(hurufDipelajari + "/26 Huruf");
+            tvTotalPoin.setText(String.valueOf(totalPoin));
+
+            int progressPercentage = (hurufDipelajari * 100) / 26;
+            progressBarPembelajaran.setProgress(progressPercentage);
+        } else {
+            tvProgressHuruf.setText("0/26 Huruf");
+            tvTotalPoin.setText("0");
+            progressBarPembelajaran.setProgress(0);
+        }
     }
 
     private void setGreetingMessage() {
         Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        
+
         String greeting;
         if (hour < 12) {
             greeting = "Selamat Pagi!";
@@ -117,13 +112,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             greeting = "Selamat Malam!";
         }
-        
+
         tvSelamatDatang.setText(greeting);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        loadUserProgress(); // Refresh progress saat kembali ke activity
+        loadUserProgress();
     }
 }
