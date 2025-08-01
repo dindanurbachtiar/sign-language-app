@@ -6,16 +6,17 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView; // Import ImageView
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.isyaratpintar.app.database.DatabaseHelper;
 import com.isyaratpintar.app.models.Huruf;
-import com.isyaratpintar.app.utils.SoundManager;
+import com.isyaratpintar.app.utils.SoundManager; // Tetap import jika masih digunakan di tempat lain
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,14 +24,14 @@ import java.util.List;
 
 public class BelajarHurufActivity extends AppCompatActivity {
 
-    private ImageView ivGestureImage; // Hanya ini yang akan menampilkan visual isyarat
+    private ImageView ivGestureImage;
     private TextView tvHuruf, tvDeskripsi, tvTips;
-    private Button btnDengarSuara, btnTandaiSelesai, btnSebelumnya, btnSelanjutnya;
+    private Button /* btnDengarSuara, */ btnTandaiSelesai, btnSebelumnya, btnSelanjutnya; // btnDengarSuara dihapus
     private ImageButton btnBack;
     private Button btnResetProgress;
 
     private DatabaseHelper databaseHelper;
-    private SoundManager soundManager;
+    private SoundManager soundManager; // Tetap dideklarasikan jika mungkin digunakan di luar context BelajarHuruf
     private List<Huruf> daftarHuruf;
     private int currentHurufIndex = 0;
 
@@ -117,14 +118,14 @@ public class BelajarHurufActivity extends AppCompatActivity {
         tvHuruf = findViewById(R.id.tv_huruf);
         tvDeskripsi = findViewById(R.id.tv_deskripsi);
         tvTips = findViewById(R.id.tv_tips);
-        btnDengarSuara = findViewById(R.id.btn_dengar_suara);
+        // btnDengarSuara = findViewById(R.id.btn_dengar_suara); // Baris ini dihapus
         btnTandaiSelesai = findViewById(R.id.btn_tandai_selesai);
         btnSebelumnya = findViewById(R.id.btn_sebelumnya);
         btnSelanjutnya = findViewById(R.id.btn_selanjutnya);
         btnBack = findViewById(R.id.btn_back);
         btnResetProgress = findViewById(R.id.btn_reset_progress);
 
-        btnDengarSuara.setText(getString(R.string.dengar_suara));
+        // btnDengarSuara.setText(getString(R.string.dengar_suara)); // Baris ini dihapus
         btnSebelumnya.setText(getString(R.string.sebelumnya));
         btnSelanjutnya.setText(getString(R.string.selanjutnya));
         btnResetProgress.setText(getString(R.string.reset_pembelajaran));
@@ -132,7 +133,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
 
     private void initData() {
         databaseHelper = new DatabaseHelper(this);
-        soundManager = new SoundManager(this);
+        soundManager = new SoundManager(this); // SoundManager tetap diinisialisasi jika masih ada kebutuhan umum, jika tidak, bisa dihapus
         daftarHuruf = createDaftarHuruf();
         Log.d("BelajarHurufActivity", "Daftar Huruf dibuat dengan " + daftarHuruf.size() + " huruf.");
     }
@@ -140,7 +141,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
     private void setupClickListeners() {
         btnBack.setOnClickListener(v -> finish());
 
-        btnDengarSuara.setOnClickListener(v -> playHurufSound(currentHurufIndex));
+        // btnDengarSuara.setOnClickListener(v -> playHurufSound(currentHurufIndex)); // Baris ini dihapus
 
         btnTandaiSelesai.setOnClickListener(v -> tandaiHurufSelesai(currentHurufIndex));
 
@@ -180,12 +181,11 @@ public class BelajarHurufActivity extends AppCompatActivity {
         List<Huruf> hurufList = new ArrayList<>();
 
         for (int i = 0; i < HURUF_LENGKAP.length; i++) {
-            Huruf huruf = new Huruf(HURUF_LENGKAP[i], 0, 0); // Default gambarResId adalah 0
+            Huruf huruf = new Huruf(HURUF_LENGKAP[i], 0, 0);
 
-            // Dapatkan ID resource gambar secara dinamis berdasarkan nama huruf (huruf kecil)
             int imageResId = getResources().getIdentifier(HURUF_LENGKAP[i].toLowerCase(), "drawable", getPackageName());
             if (imageResId != 0) {
-                huruf.setGambarResId(imageResId); // Ini adalah baris yang tadinya error
+                huruf.setGambarResId(imageResId);
             } else {
                 Log.w("BelajarHurufActivity", "Gambar drawable tidak ditemukan untuk huruf: " + HURUF_LENGKAP[i] + ". Pastikan file ada di res/drawable/ dengan nama huruf kecil (misal: a.png).");
             }
@@ -209,14 +209,13 @@ public class BelajarHurufActivity extends AppCompatActivity {
             tvDeskripsi.setText(huruf.getNama() + " = " + huruf.getDeskripsi());
             tvTips.setText("💡 Tips: " + huruf.getTips());
 
-            // Tampilkan gambar isyarat atau placeholder
             if (huruf.getGambarResId() != 0) {
                 ivGestureImage.setVisibility(View.VISIBLE);
                 ivGestureImage.setImageResource(huruf.getGambarResId());
                 ivGestureImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
             } else {
                 ivGestureImage.setVisibility(View.VISIBLE);
-                ivGestureImage.setImageResource(R.drawable.placeholder_sibi); // Menggunakan gambar placeholder
+                ivGestureImage.setImageResource(R.drawable.placeholder_sibi);
                 ivGestureImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
                 Log.w("BelajarHurufActivity", "Gambar tidak ditemukan untuk huruf: " + huruf.getNama() + ". Menggunakan placeholder.");
             }
@@ -228,7 +227,6 @@ public class BelajarHurufActivity extends AppCompatActivity {
             huruf.setDipelajari(isAlreadyDipelajari);
             Log.d("BelajarHurufActivity", "Status '" + huruf.getNama() + "' sudah dipelajari (dari DB): " + isAlreadyDipelajari);
 
-
             if (huruf.isDipelajari()) {
                 btnTandaiSelesai.setText(getString(R.string.sudah_dipelajari));
                 btnTandaiSelesai.setEnabled(false);
@@ -237,17 +235,20 @@ public class BelajarHurufActivity extends AppCompatActivity {
             } else {
                 btnTandaiSelesai.setText(getString(R.string.tandai_selesai));
                 btnTandaiSelesai.setEnabled(true);
-                btnTandaiSelesai.setBackgroundResource(R.drawable.button_secondary);
-                btnTandaiSelesai.setTextColor(getResources().getColor(R.color.blue_500));
+                btnTandaiSelesai.setBackgroundResource(R.drawable.button_primary);
+                btnTandaiSelesai.setTextColor(ContextCompat.getColor(this, android.R.color.white));
             }
         }
     }
 
+    // Metode playHurufSound dihapus karena tombol sudah tidak ada
+    /*
     private void playHurufSound(int index) {
         Huruf huruf = daftarHuruf.get(index);
         soundManager.speakText("Huruf " + huruf.getNama());
         Log.d("BelajarHurufActivity", "Memutar suara untuk huruf: " + huruf.getNama());
     }
+    */
 
     private void tandaiHurufSelesai(int index) {
         Huruf huruf = daftarHuruf.get(index);

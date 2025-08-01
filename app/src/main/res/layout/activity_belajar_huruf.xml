@@ -110,27 +110,14 @@
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:layout_marginBottom="16dp">
-
-                    <Button
-                        android:id="@+id/btn_dengar_suara"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/dengar_suara"
-                        android:background="@drawable/button_primary"
-                        android:textColor="@color/white"
-                        android:layout_marginEnd="8dp"
-                        android:paddingHorizontal="16dp"
-                        android:paddingVertical="8dp" />
-
                     <Button
                         android:id="@+id/btn_tandai_selesai"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/tandai_selesai"
-                        android:background="@drawable/button_secondary"
-                        android:textColor="@color/blue_500"
+                        android:background="@drawable/button_primary"
+                        android:textColor="@color/white"
                         android:layout_marginStart="8dp"
                         android:paddingHorizontal="16dp"
                         android:paddingVertical="8dp" />
@@ -154,7 +141,7 @@
                 android:layout_weight="1"
                 android:text="@string/sebelumnya"
                 android:background="@drawable/button_secondary"
-                android:textColor="@color/blue_500"
+                android:textColor="@color/white"
                 android:layout_marginEnd="8dp" />
 
             <Button
