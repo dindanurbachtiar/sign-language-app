@@ -6,9 +6,8 @@
 
     <uses-sdk
         android:minSdkVersion="26"
-        android:targetSdkVersion="35" />
+        android:targetSdkVersion="34" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -73,8 +72,6 @@
             android:name="com.isyaratpintar.app.ARModeActivity"
             android:exported="false"
             android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
-            android:screenOrientation="portrait" />
-
         <!-- Kuis Activity -->
         <activity
             android:name="com.isyaratpintar.app.KuisActivity"

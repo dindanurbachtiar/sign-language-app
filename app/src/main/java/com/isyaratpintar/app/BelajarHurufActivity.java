@@ -6,31 +6,34 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView; // Import ImageView
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.isyaratpintar.app.database.DatabaseHelper;
 import com.isyaratpintar.app.models.Huruf;
-import com.isyaratpintar.app.utils.SoundManager;
+import com.isyaratpintar.app.utils.SoundManager; // Tetap import jika masih digunakan di tempat lain
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import android.graphics.Color;
+
 
 public class BelajarHurufActivity extends AppCompatActivity {
 
-    private ImageView ivGestureImage; // Hanya ini yang akan menampilkan visual isyarat
+    private ImageView ivGestureImage;
     private TextView tvHuruf, tvDeskripsi, tvTips;
-    private Button btnDengarSuara, btnTandaiSelesai, btnSebelumnya, btnSelanjutnya;
+    private Button /* btnDengarSuara, */ btnTandaiSelesai, btnSebelumnya, btnSelanjutnya; // btnDengarSuara dihapus
     private ImageButton btnBack;
     private Button btnResetProgress;
 
     private DatabaseHelper databaseHelper;
-    private SoundManager soundManager;
+    private SoundManager soundManager; // Tetap dideklarasikan jika mungkin digunakan di luar context BelajarHuruf
     private List<Huruf> daftarHuruf;
     private int currentHurufIndex = 0;
 
@@ -44,62 +47,61 @@ public class BelajarHurufActivity extends AppCompatActivity {
             "🫱"
     };
     private static final String[] DESKRIPSI_LENGKAP = {
-            "Jempol ke samping, jari lain mengepal", // A
-            "Telapak tangan terbuka dan jari rapat", // B
-            "Bentuk huruf C", // C
-            "Jari telunjuk tegak, jari lain melengkung", // D
-            "Kepalan tangan", // E
-            "Jari telunjuk dan jempol membentuk lingkaran, jari lain tegak", // F
-            "Jari telunjuk dan jempol horizontal, jari lain mengepal", // G
-            "Dua jari (telunjuk dan tengah) horizontal", // H
-            "Jari kelingking tegak", // I
-            "Gerakan huruf J (kelingking digerakkan melengkung)", // J
-            "Jempol melengkung menyentuh telapak tangan, jari lain tegak", // K
-            "Jempol dan kelingking tegak, jari tengah dan manis dilipat", // L
-            "Jempol bersilang dengan telunjuk", // M
-            "Kepalan tangan dengan jempol di luar", // N
-            "Bentuk lingkaran dengan tangan (seperti O)", // O
-            "Tangan mengepal, jempol keluar ke samping, jari telunjuk ke bawah", // P
-            "Seperti G, tapi telunjuk dan jempol membentuk 'C'", // Q
-            "Dua jari menyilang di depan, seperti membentuk R", // R
-            "Jempol di antara telunjuk dan jari tengah", // S
-            "Tangan mengepal, jempol masuk ke dalam", // T
-            "Dua jari (telunjuk dan tengah) tegak dan terpisah", // U
-            "Dua jari (telunjuk dan tengah) membentuk V", // V
-            "Tiga jari (telunjuk, tengah, manis) membentuk W", // W
-            "Dua jari menyilang (telunjuk dan kelingking)", // X
-            "Jempol dan kelingking tegak, telunjuk ke bawah", // Y
-            "Jari telunjuk melengkung seperti Z" // Z
+            "Jempol ke samping, jari lain mengepal",                            // A
+            "Telapak tangan terbuka dan jari rapat",                            // B
+            "Bentuk huruf C",                                                   // C
+            "Jari telunjuk tegak, jari lain melengkung",                        // D
+            "Semua jari ditekuk ke arah telapak, menyentuh ujung jempol",      // E
+            "Jari telunjuk dan jempol membentuk lingkaran, jari lain tegak",   // F
+            "Jari telunjuk dan jempol horizontal, jari lain mengepal",         // G
+            "Dua jari (telunjuk dan tengah) horizontal",                        // H
+            "Jari kelingking tegak",                                            // I
+            "Gerakan huruf J (kelingking digerakkan melengkung)",              // J
+            "Telunjuk dan jari tengah membentuk huruf V, jempol menyilang",    // K
+            "Jempol dan telunjuk membentuk huruf L",                            // L
+            "Tiga jari dilipat di atas ibu jari",                               // M
+            "Dua jari dilipat di atas ibu jari",                                // N
+            "Semua jari membentuk lingkaran seperti huruf O",                   // O
+            "Telunjuk dan tengah membentuk huruf V miring ke bawah",           // P
+            "Seperti huruf G tapi jari menghadap ke bawah",                     // Q
+            "Telunjuk dan jari tengah menyilang",                               // R
+            "Tangan mengepal, jempol di luar",                                  // S
+            "Tangan mengepal, jempol di antara telunjuk dan tengah",           // T
+            "Dua jari (telunjuk dan tengah) tegak dan rapat",                   // U
+            "Dua jari membentuk huruf V",                                       // V
+            "Tiga jari tegak (telunjuk, tengah, manis)",                        // W
+            "Jari telunjuk melengkung seperti kait",                            // X
+            "Jempol dan kelingking tegak",       // Y
+            "Jari telunjuk digerakkan membentuk huruf Z",                       // Z
     };
     private static final String[] TIPS_LENGKAP = {
-            "Pastikan jempol menyentuh telapak tangan.",
-            "Semua jari rapat dan lurus.",
-            "Bentuk lingkaran dengan jari.",
-            "Hanya jari telunjuk yang tegak.",
-            "Semua jari mengepal rapat.",
-            "Bentuk lingkaran kecil.",
-            "Posisi horizontal sejajar.",
-            "Jari telunjuk dan tengah horizontal.",
-            "Hanya kelingking yang tegak.",
-            "Gerakan melengkung seperti J.",
-            "Jempol di lipatan jari telunjuk.",
-            "Mirip tanda 'rock on'.",
-            "Telunjuk dan jempol saling silang.",
-            "Jempol menyentuh telapak tangan.",
-            "Bentuk lingkaran penuh.",
-            "Seperti huruf P.",
-            "Perhatikan posisi jempol dan telunjuk.",
-            "Mirip huruf R.",
-            "Jempol masuk antara jari.",
-            "Jempol menekan jari telunjuk.",
-            "Dua jari terpisah.",
-            "Bentuk V yang jelas.",
-            "Tiga jari ke atas.",
-            "Jari silang membentuk X.",
-            "Seperti 'I love you'.",
-            "Bentuk Z dengan jari."
+            "Pastikan jempol menyentuh telapak tangan.",                        // A
+            "Semua jari rapat dan lurus.",                                      // B
+            "Bentuk tangan seperti setengah lingkaran.",                        // C
+            "Hanya jari telunjuk yang tegak.",                                  // D
+            "Ujung jari menyentuh jempol, mirip mencubit kecil.",               // E
+            "Bentuk lingkaran kecil di depan dengan telunjuk dan jempol.",      // F
+            "Pastikan telunjuk dan jempol sejajar horizontal.",                 // G
+            "Jari sejajar horizontal, telapak menghadap ke samping.",           // H
+            "Jaga agar kelingking tetap tegak dan lurus.",                      // I
+            "Gerakkan kelingking seperti menulis huruf J di udara.",            // J
+            "Posisi jari seperti membuat simbol 'peace' dengan jempol silang.", // K
+            "Luruskan telunjuk dan jempol seperti membentuk sudut 90 derajat.", // L
+            "Tiga jari menekuk rapat di atas ibu jari.",                        // M
+            "Hanya dua jari (manis dan kelingking) di atas ibu jari.",          // N
+            "Bentuk tangan menjadi lingkaran penuh.",                           // O
+            "Posisikan tangan seperti membuat V terbalik menghadap bawah.",     // P
+            "Jari membentuk lingkaran menghadap ke bawah.",                     // Q
+            "Silangkan telunjuk dan tengah rapat.",                             // R
+            "Jari mengepal, jempol di depan jari telunjuk.",                    // S
+            "Jempol masuk di antara dua jari di atas.",                         // T
+            "Jari telunjuk dan tengah sejajar dan lurus.",                      // U
+            "Bentangkan dua jari seperti huruf V.",                             // V
+            "Bentangkan tiga jari ke atas, jempol dan kelingking dilipat.",     // W
+            "Tekuk telunjuk menyerupai kait atau huruf X kecil.",               // X
+            "Jempol dan kelingking lurus, jari lain menekuk.",                  // Y
+            "Gerakkan telunjuk seperti menulis huruf Z di udara.",              // Z
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,14 +119,14 @@ public class BelajarHurufActivity extends AppCompatActivity {
         tvHuruf = findViewById(R.id.tv_huruf);
         tvDeskripsi = findViewById(R.id.tv_deskripsi);
         tvTips = findViewById(R.id.tv_tips);
-        btnDengarSuara = findViewById(R.id.btn_dengar_suara);
+        // btnDengarSuara = findViewById(R.id.btn_dengar_suara); // Baris ini dihapus
         btnTandaiSelesai = findViewById(R.id.btn_tandai_selesai);
         btnSebelumnya = findViewById(R.id.btn_sebelumnya);
         btnSelanjutnya = findViewById(R.id.btn_selanjutnya);
         btnBack = findViewById(R.id.btn_back);
         btnResetProgress = findViewById(R.id.btn_reset_progress);
 
-        btnDengarSuara.setText(getString(R.string.dengar_suara));
+        // btnDengarSuara.setText(getString(R.string.dengar_suara)); // Baris ini dihapus
         btnSebelumnya.setText(getString(R.string.sebelumnya));
         btnSelanjutnya.setText(getString(R.string.selanjutnya));
         btnResetProgress.setText(getString(R.string.reset_pembelajaran));
@@ -132,7 +134,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
 
     private void initData() {
         databaseHelper = new DatabaseHelper(this);
-        soundManager = new SoundManager(this);
+        soundManager = new SoundManager(this); // SoundManager tetap diinisialisasi jika masih ada kebutuhan umum, jika tidak, bisa dihapus
         daftarHuruf = createDaftarHuruf();
         Log.d("BelajarHurufActivity", "Daftar Huruf dibuat dengan " + daftarHuruf.size() + " huruf.");
     }
@@ -140,7 +142,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
     private void setupClickListeners() {
         btnBack.setOnClickListener(v -> finish());
 
-        btnDengarSuara.setOnClickListener(v -> playHurufSound(currentHurufIndex));
+        // btnDengarSuara.setOnClickListener(v -> playHurufSound(currentHurufIndex)); // Baris ini dihapus
 
         btnTandaiSelesai.setOnClickListener(v -> tandaiHurufSelesai(currentHurufIndex));
 
@@ -161,10 +163,10 @@ public class BelajarHurufActivity extends AppCompatActivity {
         });
 
         btnResetProgress.setOnClickListener(v -> {
-            new AlertDialog.Builder(this)
+            AlertDialog dialog = new AlertDialog.Builder(this)
                     .setTitle("Reset Pembelajaran")
                     .setMessage("Apakah Anda yakin ingin mereset semua progres pembelajaran dan poin? Tindakan ini tidak dapat dibatalkan.")
-                    .setPositiveButton("Ya, Reset", (dialog, which) -> {
+                    .setPositiveButton("Ya, Reset", (dialogInterface, which) -> {
                         databaseHelper.resetUserProgressAndHuruf();
                         daftarHuruf = createDaftarHuruf();
                         loadHuruf(0);
@@ -172,20 +174,27 @@ public class BelajarHurufActivity extends AppCompatActivity {
                         Log.d("BelajarHurufActivity", "Progres pembelajaran berhasil direset melalui UI.");
                     })
                     .setNegativeButton("Batal", null)
-                    .show();
+                    .create();
+
+            dialog.setOnShowListener(d -> {
+                dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.BLACK); // "Ya, Reset"
+                dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.BLACK); // "Batal"
+            });
+
+            dialog.show();
         });
+
     }
 
     private List<Huruf> createDaftarHuruf() {
         List<Huruf> hurufList = new ArrayList<>();
 
         for (int i = 0; i < HURUF_LENGKAP.length; i++) {
-            Huruf huruf = new Huruf(HURUF_LENGKAP[i], 0, 0); // Default gambarResId adalah 0
+            Huruf huruf = new Huruf(HURUF_LENGKAP[i], 0, 0);
 
-            // Dapatkan ID resource gambar secara dinamis berdasarkan nama huruf (huruf kecil)
             int imageResId = getResources().getIdentifier(HURUF_LENGKAP[i].toLowerCase(), "drawable", getPackageName());
             if (imageResId != 0) {
-                huruf.setGambarResId(imageResId); // Ini adalah baris yang tadinya error
+                huruf.setGambarResId(imageResId);
             } else {
                 Log.w("BelajarHurufActivity", "Gambar drawable tidak ditemukan untuk huruf: " + HURUF_LENGKAP[i] + ". Pastikan file ada di res/drawable/ dengan nama huruf kecil (misal: a.png).");
             }
@@ -209,14 +218,13 @@ public class BelajarHurufActivity extends AppCompatActivity {
             tvDeskripsi.setText(huruf.getNama() + " = " + huruf.getDeskripsi());
             tvTips.setText("💡 Tips: " + huruf.getTips());
 
-            // Tampilkan gambar isyarat atau placeholder
             if (huruf.getGambarResId() != 0) {
                 ivGestureImage.setVisibility(View.VISIBLE);
                 ivGestureImage.setImageResource(huruf.getGambarResId());
                 ivGestureImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
             } else {
                 ivGestureImage.setVisibility(View.VISIBLE);
-                ivGestureImage.setImageResource(R.drawable.placeholder_sibi); // Menggunakan gambar placeholder
+                ivGestureImage.setImageResource(R.drawable.placeholder_sibi);
                 ivGestureImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
                 Log.w("BelajarHurufActivity", "Gambar tidak ditemukan untuk huruf: " + huruf.getNama() + ". Menggunakan placeholder.");
             }
@@ -228,26 +236,28 @@ public class BelajarHurufActivity extends AppCompatActivity {
             huruf.setDipelajari(isAlreadyDipelajari);
             Log.d("BelajarHurufActivity", "Status '" + huruf.getNama() + "' sudah dipelajari (dari DB): " + isAlreadyDipelajari);
 
-
             if (huruf.isDipelajari()) {
                 btnTandaiSelesai.setText(getString(R.string.sudah_dipelajari));
                 btnTandaiSelesai.setEnabled(false);
-                btnTandaiSelesai.setBackgroundResource(R.drawable.button_disabled);
-                btnTandaiSelesai.setTextColor(getResources().getColor(android.R.color.darker_gray));
+                btnTandaiSelesai.setBackgroundResource(R.color.koneng4);
+                btnTandaiSelesai.setTextColor(getResources().getColor(android.R.color.black));
             } else {
                 btnTandaiSelesai.setText(getString(R.string.tandai_selesai));
                 btnTandaiSelesai.setEnabled(true);
-                btnTandaiSelesai.setBackgroundResource(R.drawable.button_secondary);
-                btnTandaiSelesai.setTextColor(getResources().getColor(R.color.blue_500));
+                btnTandaiSelesai.setBackgroundResource(R.color.koneng5);
+                btnTandaiSelesai.setTextColor(ContextCompat.getColor(this, android.R.color.black));
             }
         }
     }
 
+    // Metode playHurufSound dihapus karena tombol sudah tidak ada
+    /*
     private void playHurufSound(int index) {
         Huruf huruf = daftarHuruf.get(index);
         soundManager.speakText("Huruf " + huruf.getNama());
         Log.d("BelajarHurufActivity", "Memutar suara untuk huruf: " + huruf.getNama());
     }
+    */
 
     private void tandaiHurufSelesai(int index) {
         Huruf huruf = daftarHuruf.get(index);

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background_main"
+    android:background="@color/bodas"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -45,14 +45,7 @@
 
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btn_profil"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@drawable/circle_button_background"
-                android:src="@drawable/ic_person"
-                android:contentDescription="@string/profil_pengguna"
-                app:tint="@color/blue_500" />
+
 
         </LinearLayout>
 
@@ -62,7 +55,7 @@
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            android:backgroundTint="@color/white_transparent">
+            android:backgroundTint="@color/oren">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -87,7 +80,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/progress_pembelajaran"
                             android:textSize="12sp"
-                            android:textColor="@color/text_secondary" />
+                            android:textColor="@color/oren2" />
 
                         <TextView
                             android:id="@+id/tv_progress_huruf"
@@ -111,7 +104,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/total_poin"
                             android:textSize="12sp"
-                            android:textColor="@color/text_secondary" />
+                            android:textColor="@color/oren2" />
 
                         <TextView
                             android:id="@+id/tv_total_poin"
@@ -120,7 +113,7 @@
                             android:text="0"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="@color/yellow_600" />
+                            android:textColor="@color/oren2" />
 
                     </LinearLayout>
 
@@ -151,12 +144,12 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_belajar_huruf"
                 android:layout_width="0dp"
-                android:layout_height="120dp"
+                android:layout_height="190dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="6dp"
-                android:backgroundTint="@color/blue_400"
+                android:backgroundTint="@color/koneng"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true">
@@ -164,33 +157,32 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="center"
+                    android:orientation="vertical"
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/ic_book"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_marginBottom="8dp"
                         android:contentDescription="@string/icon_belajar_huruf"
-                        app:tint="@color/white" />
+                        android:src="@drawable/icon_belajar" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/belajar_huruf"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:textSize="14sp" />
+                        android:textColor="@color/koneng2"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:alpha="0.8"
                         android:text="A-Z SIBI"
-                        android:textColor="@color/white"
-                        android:textSize="10sp"
-                        android:alpha="0.8" />
+                        android:textColor="@color/koneng2"
+                        android:textSize="10sp" />
 
                 </LinearLayout>
 
@@ -199,12 +191,12 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_ar_mode"
                 android:layout_width="0dp"
-                android:layout_height="120dp"
+                android:layout_height="190dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="6dp"
-                android:backgroundTint="@color/red_400"
+                android:backgroundTint="@color/biru"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true">
@@ -217,18 +209,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/ic_camera"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/icon_ar"
                         android:layout_marginBottom="8dp"
-                        android:contentDescription="@string/icon_ar_mode"
-                        app:tint="@color/white" />
+                        android:contentDescription="@string/icon_ar_mode" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/ar_mode"
-                        android:textColor="@color/white"
+                        android:textColor="@color/biru2"
                         android:textStyle="bold"
                         android:textSize="14sp" />
 
@@ -236,7 +227,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/visualisasi_3d"
-                        android:textColor="@color/white"
+                        android:textColor="@color/biru2"
                         android:textSize="10sp"
                         android:alpha="0.8" />
 
@@ -247,12 +238,12 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_kuis"
                 android:layout_width="0dp"
-                android:layout_height="120dp"
+                android:layout_height="180dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="6dp"
-                android:backgroundTint="@color/green_400"
+                android:backgroundTint="@color/berem"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true">
@@ -265,18 +256,17 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/ic_quiz"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/icon_kuis"
                         android:layout_marginBottom="8dp"
-                        android:contentDescription="@string/icon_kuis"
-                        app:tint="@color/white" />
+                        android:contentDescription="@string/icon_kuis"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/kuis"
-                        android:textColor="@color/white"
+                        android:textColor="@color/berem2"
                         android:textStyle="bold"
                         android:textSize="14sp" />
 
@@ -284,7 +274,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/uji_kemampuan"
-                        android:textColor="@color/white"
+                        android:textColor="@color/berem2"
                         android:textSize="10sp"
                         android:alpha="0.8" />
 
@@ -295,12 +285,12 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_tentang"
                 android:layout_width="0dp"
-                android:layout_height="120dp"
+                android:layout_height="180dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="6dp"
-                android:backgroundTint="@color/purple_400"
+                android:backgroundTint="@color/hejo"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true">
@@ -313,18 +303,18 @@
                     android:padding="16dp">
 
                     <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/ic_info"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/icon_tentang"
                         android:layout_marginBottom="8dp"
                         android:contentDescription="@string/icon_tentang"
-                        app:tint="@color/white" />
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tentang"
-                        android:textColor="@color/white"
+                        android:textColor="@color/hejo2"
                         android:textStyle="bold"
                         android:textSize="14sp" />
 
@@ -332,7 +322,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/info_aplikasi"
-                        android:textColor="@color/white"
+                        android:textColor="@color/hejo2"
                         android:textSize="10sp"
                         android:alpha="0.8" />
 

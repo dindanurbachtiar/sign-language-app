@@ -52,4 +52,25 @@
 
     <color name="gray_300">#E0E0E0</color>
 
+    <!-- Warna Baru -->
+    <color name="bodas">#FFFCF0</color>
+    <color name="koneng">#FFF09D</color>
+    <color name="koneng2">#A68600</color>
+    <color name="biru">#D5F7FF</color>
+    <color name="biru2">#0B98AF</color>
+    <color name="berem">#F49693</color>
+    <color name="berem2">#AF2208</color>
+    <color name="hejo">#E0FF7B</color>
+    <color name="hejo2">#7D9907</color>
+    <color name="oren">#FAB5A0</color>
+    <color name="oren2">#902400</color>
+    <color name="koneng3">#F6CD42</color>
+    <color name="koneng4">#F6EEC6</color>
+    <color name="koneng5">#E5DEC0</color>
+    <color name="koneng6">#FFF09D</color>
+    <color name="pink">#FF9D8D</color>
+    <color name="pink2">#FF9F9B</color>
+    <color name="hejo3">#058105</color>
+
+
 </resources>
