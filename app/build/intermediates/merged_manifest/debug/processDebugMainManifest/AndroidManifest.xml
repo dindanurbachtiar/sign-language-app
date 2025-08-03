@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.isyaratpintar.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- AR Core requirements -->
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="false" />
+
+    <queries>
+        <package android:name="com.google.ar.core" />
+    </queries>
+
+    <permission
+        android:name="com.isyaratpintar.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.isyaratpintar.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.IsyaratPintar" >
+
+        <!-- AR Core metadata -->
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <!-- Splash Activity -->
+        <activity
+            android:name="com.isyaratpintar.app.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.IsyaratPintar.Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.isyaratpintar.app.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+
+        <!-- Belajar Huruf Activity -->
+        <activity
+            android:name="com.isyaratpintar.app.BelajarHurufActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+
+        <!-- AR Mode Activity -->
+        <activity
+            android:name="com.isyaratpintar.app.ARModeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+        <!-- Kuis Activity -->
+        <activity
+            android:name="com.isyaratpintar.app.KuisActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+
+        <!-- Tentang Activity -->
+        <activity
+            android:name="com.isyaratpintar.app.TentangActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+
+        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+        <meta-data
+            android:name="com.google.ar.core.min_apk_version"
+            android:value="232050000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+        <activity
+            android:name="com.google.ar.core.InstallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.isyaratpintar.app.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

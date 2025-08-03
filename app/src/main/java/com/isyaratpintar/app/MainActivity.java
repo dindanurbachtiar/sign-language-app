@@ -2,11 +2,8 @@ package com.isyaratpintar.app;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -21,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private CardView cardBelajarHuruf, cardARMode, cardKuis, cardTentang;
     private TextView tvSelamatDatang, tvProgressHuruf, tvTotalPoin;
     private ProgressBar progressBarPembelajaran;
-    private ImageButton btnProfil;
     private DatabaseHelper databaseHelper;
 
     @Override
@@ -45,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         tvProgressHuruf = findViewById(R.id.tv_progress_huruf);
         tvTotalPoin = findViewById(R.id.tv_total_poin);
         progressBarPembelajaran = findViewById(R.id.progress_bar_pembelajaran);
-        btnProfil = findViewById(R.id.btn_profil);
     }
 
     private void initDatabase() {
@@ -65,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
         cardKuis.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, KuisActivity.class);
-            // Tambahkan ekstra untuk langsung memulai kuis "isyarat_ke_huruf"
             intent.putExtra("kuis_mode", "isyarat_ke_huruf");
             startActivity(intent);
         });
@@ -73,10 +67,6 @@ public class MainActivity extends AppCompatActivity {
         cardTentang.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TentangActivity.class);
             startActivity(intent);
-        });
-
-        btnProfil.setOnClickListener(v -> {
-            Toast.makeText(MainActivity.this, "Fitur Profil akan segera hadir!", Toast.LENGTH_SHORT).show();
         });
     }
 

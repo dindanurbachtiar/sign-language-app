@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,7 +22,7 @@ import java.lang.String;
 
 public final class ActivityKuisBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
   public final ImageButton btnBack;
@@ -60,7 +60,7 @@ public final class ActivityKuisBinding implements ViewBinding {
   @NonNull
   public final TextView tvSkor;
 
-  private ActivityKuisBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnBack,
+  private ActivityKuisBinding(@NonNull FrameLayout rootView, @NonNull ImageButton btnBack,
       @NonNull Button btnPilihan1, @NonNull Button btnPilihan2, @NonNull Button btnPilihan3,
       @NonNull Button btnPilihan4, @NonNull CardView cardQuiz, @NonNull ImageView ivGambarIsyarat,
       @NonNull ProgressBar progressKuis, @NonNull TextView tvJudulKuis,
@@ -82,7 +82,7 @@ public final class ActivityKuisBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -179,7 +179,7 @@ public final class ActivityKuisBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityKuisBinding((LinearLayout) rootView, btnBack, btnPilihan1, btnPilihan2,
+      return new ActivityKuisBinding((FrameLayout) rootView, btnBack, btnPilihan1, btnPilihan2,
           btnPilihan3, btnPilihan4, cardQuiz, ivGambarIsyarat, progressKuis, tvJudulKuis,
           tvNomorSoal, tvPertanyaan, tvSkor);
     }
