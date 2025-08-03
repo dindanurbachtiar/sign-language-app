@@ -79,11 +79,11 @@ public class KuisActivity extends AppCompatActivity {
     private void initViews() {
         // Komponen UI pemilihan mode yang dihapus
         // btnModeHurufKeIsyarat = findViewById(R.id.btn_huruf_ke_isyarat);
-        // btnModeIsyaratKeHuruf = findViewById(R.id.btn_isyarat_ke_huruf);
+        // btnModeIsyaratKeHuruf = findViewById(R.id.btn_isyarat_ke_hurarat);
         // btnModeCampuran = findViewById(R.id.btn_mode_campuran);
         // cardModeSelection = findViewById(R.id.card_mode_selection); // Ini akan dihapus di XML
 
-        cardQuiz = findViewById(R.id.card_quiz); // Hanya cardQuiz yang relevan
+        cardQuiz = findViewById(R.id.card_quiz);
         tvJudulKuis = findViewById(R.id.tv_judul_kuis);
         tvPertanyaan = findViewById(R.id.tv_pertanyaan);
         tvNomorSoal = findViewById(R.id.tv_nomor_soal);
@@ -340,10 +340,10 @@ public class KuisActivity extends AppCompatActivity {
     }
 
     private void resetButtonColors() {
-        btnPilihan1.setBackgroundResource(R.drawable.button_secondary);
-        btnPilihan2.setBackgroundResource(R.drawable.button_secondary);
-        btnPilihan3.setBackgroundResource(R.drawable.button_secondary);
-        btnPilihan4.setBackgroundResource(R.drawable.button_secondary);
+        btnPilihan1.setBackgroundResource(R.drawable.button_quiz_selector);
+        btnPilihan2.setBackgroundResource(R.drawable.button_quiz_selector);
+        btnPilihan3.setBackgroundResource(R.drawable.button_quiz_selector);
+        btnPilihan4.setBackgroundResource(R.drawable.button_quiz_selector);
     }
 
     private void selesaiKuis() {

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/item_huruf.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/item_huruf.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/activity_kuis.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_kuis.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/activity_ar_mode.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_ar_mode.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/activity_belajar_huruf.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_belajar_huruf.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/activity_tentang.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_tentang.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/activity_main.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-mergeDebugResources-34:/layout/activity_splash.xml",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_splash.xml"
+    }
+]

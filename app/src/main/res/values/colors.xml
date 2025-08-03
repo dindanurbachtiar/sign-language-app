@@ -28,6 +28,7 @@
     <color name="yellow_600">#CA8A04</color>
     
     <!-- Background Colors -->
+    <color name="yellow_100">#F6EEC6</color>
     <color name="cyan_200">#A5F3FC</color>
     <color name="cyan_300">#67E8F9</color>
     <color name="yellow_200">#FEF08A</color>
@@ -40,6 +41,7 @@
     <color name="indigo_300">#A5B4FC</color>
     <color name="purple_200">#DDD6FE</color>
     <color name="purple_300">#C4B5FD</color>
+    <color name="pink_500">#ff8580</color>
     
     <!-- Text Colors -->
     <color name="text_primary">#1F2937</color>

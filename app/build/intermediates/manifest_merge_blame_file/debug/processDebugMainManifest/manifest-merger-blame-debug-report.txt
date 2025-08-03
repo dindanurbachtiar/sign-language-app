@@ -1,0 +1,236 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.isyaratpintar.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:6:5-71
+12-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:6:22-68
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:7:22-64
+14
+15    <!-- AR Core requirements -->
+16    <uses-feature
+16-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:10:5-12:36
+17        android:name="android.hardware.camera.ar"
+17-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:11:9-50
+18        android:required="false" />
+18-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:12:9-33
+19
+20    <queries>
+20-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:20:5-22:15
+21        <package android:name="com.google.ar.core" />
+21-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:21:9-54
+21-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:21:18-51
+22    </queries>
+23
+24    <permission
+24-->[androidx.core:core:1.9.0] C:\Users\p\.gradle\caches\8.10\transforms\8af3ffedcd6a32f55d1ebceb0fc8d696\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+25        android:name="com.isyaratpintar.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.9.0] C:\Users\p\.gradle\caches\8.10\transforms\8af3ffedcd6a32f55d1ebceb0fc8d696\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.9.0] C:\Users\p\.gradle\caches\8.10\transforms\8af3ffedcd6a32f55d1ebceb0fc8d696\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.isyaratpintar.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.9.0] C:\Users\p\.gradle\caches\8.10\transforms\8af3ffedcd6a32f55d1ebceb0fc8d696\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.9.0] C:\Users\p\.gradle\caches\8.10\transforms\8af3ffedcd6a32f55d1ebceb0fc8d696\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:14:5-70:19
+31        android:allowBackup="true"
+31-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:15:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] C:\Users\p\.gradle\caches\8.10\transforms\8af3ffedcd6a32f55d1ebceb0fc8d696\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+33        android:dataExtractionRules="@xml/data_extraction_rules"
+33-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:16:9-65
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:fullBackupContent="@xml/backup_rules"
+36-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:17:9-54
+37        android:label="@string/app_name"
+37-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:18:9-41
+38        android:supportsRtl="true"
+38-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:19:9-35
+39        android:testOnly="true"
+40        android:theme="@style/Theme.IsyaratPintar" >
+40-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:20:9-51
+41
+42        <!-- AR Core metadata -->
+43        <meta-data
+43-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:24:9-26:40
+44            android:name="com.google.ar.core"
+44-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:25:13-46
+45            android:value="optional" />
+45-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:26:13-37
+46
+47        <!-- Splash Activity -->
+48        <activity
+48-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:29:9-37:20
+49            android:name="com.isyaratpintar.app.SplashActivity"
+49-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:30:13-43
+50            android:exported="true"
+50-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:31:13-36
+51            android:theme="@style/Theme.IsyaratPintar.Splash" >
+51-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:32:13-62
+52            <intent-filter>
+52-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:33:13-36:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:34:17-69
+53-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:34:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:35:17-77
+55-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:35:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <!-- Main Activity -->
+60        <activity
+60-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:40:9-43:70
+61            android:name="com.isyaratpintar.app.MainActivity"
+61-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:41:13-41
+62            android:exported="false"
+62-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:42:13-37
+63            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+63-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:43:13-67
+64
+65        <!-- Belajar Huruf Activity -->
+66        <activity
+66-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:46:9-49:70
+67            android:name="com.isyaratpintar.app.BelajarHurufActivity"
+67-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:47:13-49
+68            android:exported="false"
+68-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:48:13-37
+69            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+69-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:49:13-67
+70
+71        <!-- AR Mode Activity -->
+72        <activity
+72-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:52:9-55:70
+73            android:name="com.isyaratpintar.app.ARModeActivity"
+73-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:53:13-43
+74            android:exported="false"
+74-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:54:13-37
+75            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+75-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:55:13-67
+76            android:screenOrientation="portrait" />
+77
+78        <!-- Kuis Activity -->
+79        <activity
+79-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:59:9-62:70
+80            android:name="com.isyaratpintar.app.KuisActivity"
+80-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:60:13-41
+81            android:exported="false"
+81-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:61:13-37
+82            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+82-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:62:13-67
+83
+84        <!-- Tentang Activity -->
+85        <activity
+85-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:65:9-68:70
+86            android:name="com.isyaratpintar.app.TentangActivity"
+86-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:66:13-44
+87            android:exported="false"
+87-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:67:13-37
+88            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
+88-->C:\Users\p\AndroidStudioProjects\sign-language-app\app\src\main\AndroidManifest.xml:68:13-67
+89
+90        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+91        <meta-data
+91-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:27:9-29:41
+92            android:name="com.google.ar.core.min_apk_version"
+92-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:28:13-62
+93            android:value="232050000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+93-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:29:13-38
+94        <activity
+94-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:31:9-37:80
+95            android:name="com.google.ar.core.InstallActivity"
+95-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:32:13-62
+96            android:configChanges="keyboardHidden|orientation|screenSize"
+96-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:33:13-74
+97            android:excludeFromRecents="true"
+97-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:34:13-46
+98            android:exported="false"
+98-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:35:13-37
+99            android:launchMode="singleTop"
+99-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:36:13-43
+100            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+100-->[com.google.ar:core:1.40.0] C:\Users\p\.gradle\caches\8.10\transforms\771f44758207b7f0b849c10e0b539a77\transformed\core-1.40.0\AndroidManifest.xml:37:13-77
+101
+102        <provider
+102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+103            android:name="androidx.startup.InitializationProvider"
+103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+104            android:authorities="com.isyaratpintar.app.androidx-startup"
+104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+105            android:exported="false" >
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+106            <meta-data
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+108                android:value="androidx.startup" />
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\p\.gradle\caches\8.10\transforms\797b95ccb39f850ce4d21ce174aa94e4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+109            <meta-data
+109-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\p\.gradle\caches\8.10\transforms\478a914d05a4d2e083e1d304e51e1657\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+110-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\p\.gradle\caches\8.10\transforms\478a914d05a4d2e083e1d304e51e1657\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+111                android:value="androidx.startup" />
+111-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\p\.gradle\caches\8.10\transforms\478a914d05a4d2e083e1d304e51e1657\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+114                android:value="androidx.startup" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+115        </provider>
+116
+117        <receiver
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+118            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+119            android:directBootAware="false"
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+120            android:enabled="true"
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+121            android:exported="true"
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+122            android:permission="android.permission.DUMP" >
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+124                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+125            </intent-filter>
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+127                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+130                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+131            </intent-filter>
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+133                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\p\.gradle\caches\8.10\transforms\926a8d8154df4f1e1b6ed3d7f697e932\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+134            </intent-filter>
+135        </receiver>
+136    </application>
+137
+138</manifest>
