@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background_cyan">
+    android:background="@drawable/bg_belajar">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,14 +55,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="24dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@color/koneng3">
 
                 <ImageView
                     android:id="@+id/iv_gesture_image"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_marginBottom="16dp"
-                    android:src="@drawable/placeholder_sibi" android:scaleType="fitCenter"
+                    android:src="@drawable/a" android:scaleType="fitCenter"
                     android:contentDescription="Gambar Isyarat Huruf" />
 
                 <TextView
@@ -81,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:text="A = Jari telunjuk ke atas"
                     android:textSize="16sp"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/black"
                     android:textAlignment="center"
                     android:layout_marginBottom="16dp" />
 
@@ -91,7 +92,7 @@
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp"
-                    android:backgroundTint="@color/blue_400">
+                    android:backgroundTint="@color/koneng4">
 
                     <TextView
                         android:id="@+id/tv_tips"
@@ -99,28 +100,29 @@
                         android:layout_height="wrap_content"
                         android:text="💡 Tips: Pastikan jari telunjuk lurus ke atas"
                         android:textSize="14sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:padding="12dp" />
 
                 </androidx.cardview.widget.CardView>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="332dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp"
                     android:gravity="center"
-                    android:layout_marginBottom="16dp">
+                    android:orientation="horizontal">
+
                     <Button
                         android:id="@+id/btn_tandai_selesai"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/tandai_selesai"
-                        android:background="@drawable/button_primary"
-                        android:textColor="@color/white"
-                        android:layout_marginStart="8dp"
                         android:paddingHorizontal="16dp"
-                        android:paddingVertical="8dp" />
+                        android:paddingVertical="8dp"
+                        android:text="@string/tandai_selesai"
+                        android:backgroundTint="@color/koneng5"
+                        android:textColor="@color/black"
+                        app:cornerRadius="10dp" />
 
                 </LinearLayout>
 
@@ -140,8 +142,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/sebelumnya"
-                android:background="@drawable/button_secondary"
-                android:textColor="@color/white"
+                android:backgroundTint="@color/koneng3"
+                android:textColor="@color/black"
+                app:cornerRadius="8dp"
                 android:layout_marginEnd="8dp" />
 
             <Button
@@ -150,8 +153,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/selanjutnya"
-                android:background="@drawable/button_primary"
-                android:textColor="@color/white"
+                android:backgroundTint="@color/koneng3"
+                android:textColor="@color/black"
+                app:cornerRadius="8dp"
                 android:layout_marginStart="8dp" />
 
         </LinearLayout>
@@ -161,8 +165,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reset_pembelajaran"
-            android:background="@drawable/button_outline"
-            android:textColor="@color/red_400"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            app:cornerRadius="8dp"
             android:layout_marginTop="8dp"
             android:paddingVertical="12dp" />
 

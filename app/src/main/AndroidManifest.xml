@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -46,26 +45,29 @@
         <activity
             android:name=".BelajarHurufActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar"/>
 
         <!-- AR Mode Activity -->
         <activity
             android:name=".ARModeActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar"/>
 
         <!-- Kuis Activity -->
         <activity
             android:name=".KuisActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar"/>
 
         <!-- Tentang Activity -->
         <activity
             android:name=".TentangActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar"/>
 
     </application>
 

@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.IsyaratPintar" parent="Theme.Material3.DayNight">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/blue_500</item>
-        <item name="colorPrimaryVariant">@color/blue_600</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/koneng5</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
         <item name="colorSecondary">@color/green_500</item>
         <item name="colorSecondaryVariant">@color/green_600</item>
         <item name="colorOnSecondary">@color/white</item>

@@ -1,130 +1,258 @@
 [
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_activity_belajar_huruf.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\activity_belajar_huruf.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_m.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\m.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_button_disabled.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\button_disabled.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_info.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_book.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_book.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_button_primary.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\button_primary.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_a.png.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\a.png"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_t.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\t.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_activity_splash.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\activity_splash.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_f.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\f.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_activity_ar_mode.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\activity_ar_mode.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_icon_tentang.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\icon_tentang.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_gradient_background_purple.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\gradient_background_purple.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_volume.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_volume.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_item_huruf.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\item_huruf.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_bg_kuis.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\bg_kuis.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_camera.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_camera.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_circle_button_background.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\circle_button_background.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\xml_backup_rules.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_button_disabled.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\button_disabled.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_person.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_person.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_person.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_button_primary.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\button_primary.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_quiz.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_quiz.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_splash_background.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\splash_background.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_camera.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_gradient_background_green.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\gradient_background_green.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_activity_belajar_huruf.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\activity_belajar_huruf.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_c.png.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\c.png"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_gradient_background_main.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\gradient_background_main.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_button_secondary.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\button_secondary.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_l.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\l.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_activity_main.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_gradient_background_cyan.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\gradient_background_cyan.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_w.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\w.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_placeholder_sibi.png.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\placeholder_sibi.png"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_p.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\p.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_activity_kuis.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\activity_kuis.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_item_huruf.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\item_huruf.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_info.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_info.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_e.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\e.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\layout_activity_tentang.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\layout\\activity_tentang.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_z.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\z.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_button_outline.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\button_outline.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_bg.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\bg.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_arrow_back.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_arrow_back.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_placeholder_sibi.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\placeholder_sibi.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_quiz.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_quiz.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_activity_ar_mode.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\activity_ar_mode.xml"
     },
     {
-        "merged": "com.isyaratpintar.app-merged_res-4:/layout_activity_ar_mode.xml.flat",
-        "source": "com.isyaratpintar.app-main-6:/layout/activity_ar_mode.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_ic_volume.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\ic_volume.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_i.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\i.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_gradient_background_gray.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\gradient_background_gray.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_bg_tentang.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\bg_tentang.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\xml_data_extraction_rules.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_arrow_back.xml"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_gradient_background_main.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\gradient_background_main.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_b.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\b.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_b.png.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\b.png"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_s.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\s.png"
     },
     {
-        "merged": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-4:\\drawable_circle_button_background.xml.flat",
-        "source": "D:\\android\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-6:\\drawable\\circle_button_background.xml"
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_activity_kuis.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\activity_kuis.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_icon_ar.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\icon_ar.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_v.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\v.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_d.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\d.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_bg_belajar.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\bg_belajar.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_splash_background.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\splash_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_o.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\o.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_k.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\k.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-merged_res-35:/layout_activity_tentang.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_tentang.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_button_primary2.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\button_primary2.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_h.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\h.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_y.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\y.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_r.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\r.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_a.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\a.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_button_secondary.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\button_secondary.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_button_outline.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\button_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_gradient_background_purple.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\gradient_background_purple.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_ic_book.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\ic_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_gradient_background_cyan.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\gradient_background_cyan.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_gradient_background_green.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\gradient_background_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_u.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\u.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_n.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\n.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_c.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\c.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_icon_kuis.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\icon_kuis.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_j.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\j.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_gradient_background_gray.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\gradient_background_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_q.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\q.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\layout_activity_tentang.xml.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\layout\\activity_tentang.xml"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_x.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\x.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_g.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\g.png"
+    },
+    {
+        "merged": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-merged_res-35:\\drawable_icon_belajar.png.flat",
+        "source": "C:\\Users\\I M\\.gradle\\daemon\\8.2\\com.isyaratpintar.app-main-37:\\drawable\\icon_belajar.png"
     }
 ]

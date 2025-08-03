@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="berem">#F49693</color>
+    <color name="berem2">#AF2208</color>
+    <color name="biru">#D5F7FF</color>
+    <color name="biru2">#0B98AF</color>
     <color name="black">#FF000000</color>
     <color name="blue_400">#60A5FA</color>
     <color name="blue_500">#3B82F6</color>
     <color name="blue_600">#2563EB</color>
+    <color name="bodas">#FFFCF0</color>
     <color name="cyan_200">#A5F3FC</color>
     <color name="cyan_300">#67E8F9</color>
     <color name="gray_300">#E0E0E0</color>
@@ -14,8 +19,21 @@
     <color name="green_400">#4ADE80</color>
     <color name="green_500">#22C55E</color>
     <color name="green_600">#16A34A</color>
+    <color name="hejo">#E0FF7B</color>
+    <color name="hejo2">#7D9907</color>
+    <color name="hejo3">#058105</color>
     <color name="indigo_200">#C7D2FE</color>
     <color name="indigo_300">#A5B4FC</color>
+    <color name="koneng">#FFF09D</color>
+    <color name="koneng2">#A68600</color>
+    <color name="koneng3">#F6CD42</color>
+    <color name="koneng4">#F6EEC6</color>
+    <color name="koneng5">#E5DEC0</color>
+    <color name="koneng6">#FFF09D</color>
+    <color name="oren">#FAB5A0</color>
+    <color name="oren2">#902400</color>
+    <color name="pink">#FF9D8D</color>
+    <color name="pink2">#FF9F9B</color>
     <color name="purple_200">#DDD6FE</color>
     <color name="purple_300">#C4B5FD</color>
     <color name="purple_400">#A78BFA</color>
@@ -94,15 +112,15 @@
     <string name="tentang_sibi">Tentang SIBI (Sistem Isyarat Bahasa Indonesia)</string>
     <string name="total_poin">Total Poin</string>
     <string name="tujuan_aplikasi">Tujuan Aplikasi:</string>
-    <string name="uji_kemampuan">Uji kemampuan bahasa isyarat Anda</string>
+    <string name="uji_kemampuan">Uji kemampuan bahasa isyarat</string>
     <string name="ulangi">Ulangi</string>
     <string name="versi">Versi 1.0.0</string>
     <string name="visualisasi_3d">Visualisasi 3D Isyarat</string>
     <style name="Theme.IsyaratPintar" parent="Theme.Material3.DayNight">
         
-        <item name="colorPrimary">@color/blue_500</item>
-        <item name="colorPrimaryVariant">@color/blue_600</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/koneng5</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
         <item name="colorSecondary">@color/green_500</item>
         <item name="colorSecondaryVariant">@color/green_600</item>
         <item name="colorOnSecondary">@color/white</item>

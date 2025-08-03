@@ -8,7 +8,6 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -66,26 +65,29 @@
         <activity
             android:name="com.isyaratpintar.app.BelajarHurufActivity"
             android:exported="false"
-            android:parentActivityName="com.isyaratpintar.app.MainActivity" />
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
 
         <!-- AR Mode Activity -->
         <activity
             android:name="com.isyaratpintar.app.ARModeActivity"
             android:exported="false"
             android:parentActivityName="com.isyaratpintar.app.MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
 
         <!-- Kuis Activity -->
         <activity
             android:name="com.isyaratpintar.app.KuisActivity"
             android:exported="false"
-            android:parentActivityName="com.isyaratpintar.app.MainActivity" />
+            android:parentActivityName="com.isyaratpintar.app.MainActivity"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
 
         <!-- Tentang Activity -->
         <activity
             android:name="com.isyaratpintar.app.TentangActivity"
             android:exported="false"
-            android:parentActivityName="com.isyaratpintar.app.MainActivity" />
+            android:parentActivityName="com.isyaratpintar.app.MainActivity"
+            android:theme="@style/Theme.IsyaratPintar.NoActionBar" />
 
         <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
         <meta-data

@@ -4,7 +4,6 @@ package com.isyaratpintar.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -21,9 +20,6 @@ import java.lang.String;
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   private final ScrollView rootView;
-
-  @NonNull
-  public final ImageButton btnProfil;
 
   @NonNull
   public final CardView cardArMode;
@@ -49,13 +45,11 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView tvTotalPoin;
 
-  private ActivityMainBinding(@NonNull ScrollView rootView, @NonNull ImageButton btnProfil,
-      @NonNull CardView cardArMode, @NonNull CardView cardBelajarHuruf, @NonNull CardView cardKuis,
-      @NonNull CardView cardTentang, @NonNull ProgressBar progressBarPembelajaran,
-      @NonNull TextView tvProgressHuruf, @NonNull TextView tvSelamatDatang,
-      @NonNull TextView tvTotalPoin) {
+  private ActivityMainBinding(@NonNull ScrollView rootView, @NonNull CardView cardArMode,
+      @NonNull CardView cardBelajarHuruf, @NonNull CardView cardKuis, @NonNull CardView cardTentang,
+      @NonNull ProgressBar progressBarPembelajaran, @NonNull TextView tvProgressHuruf,
+      @NonNull TextView tvSelamatDatang, @NonNull TextView tvTotalPoin) {
     this.rootView = rootView;
-    this.btnProfil = btnProfil;
     this.cardArMode = cardArMode;
     this.cardBelajarHuruf = cardBelajarHuruf;
     this.cardKuis = cardKuis;
@@ -93,12 +87,6 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_profil;
-      ImageButton btnProfil = ViewBindings.findChildViewById(rootView, id);
-      if (btnProfil == null) {
-        break missingId;
-      }
-
       id = R.id.card_ar_mode;
       CardView cardArMode = ViewBindings.findChildViewById(rootView, id);
       if (cardArMode == null) {
@@ -147,9 +135,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ScrollView) rootView, btnProfil, cardArMode, cardBelajarHuruf,
-          cardKuis, cardTentang, progressBarPembelajaran, tvProgressHuruf, tvSelamatDatang,
-          tvTotalPoin);
+      return new ActivityMainBinding((ScrollView) rootView, cardArMode, cardBelajarHuruf, cardKuis,
+          cardTentang, progressBarPembelajaran, tvProgressHuruf, tvSelamatDatang, tvTotalPoin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

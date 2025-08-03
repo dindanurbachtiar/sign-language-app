@@ -26,9 +26,6 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
   public final ImageButton btnBack;
 
   @NonNull
-  public final Button btnDengarSuara;
-
-  @NonNull
   public final Button btnResetProgress;
 
   @NonNull
@@ -53,13 +50,12 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
   public final TextView tvTips;
 
   private ActivityBelajarHurufBinding(@NonNull ScrollView rootView, @NonNull ImageButton btnBack,
-      @NonNull Button btnDengarSuara, @NonNull Button btnResetProgress,
-      @NonNull Button btnSebelumnya, @NonNull Button btnSelanjutnya,
-      @NonNull Button btnTandaiSelesai, @NonNull ImageView ivGestureImage,
-      @NonNull TextView tvDeskripsi, @NonNull TextView tvHuruf, @NonNull TextView tvTips) {
+      @NonNull Button btnResetProgress, @NonNull Button btnSebelumnya,
+      @NonNull Button btnSelanjutnya, @NonNull Button btnTandaiSelesai,
+      @NonNull ImageView ivGestureImage, @NonNull TextView tvDeskripsi, @NonNull TextView tvHuruf,
+      @NonNull TextView tvTips) {
     this.rootView = rootView;
     this.btnBack = btnBack;
-    this.btnDengarSuara = btnDengarSuara;
     this.btnResetProgress = btnResetProgress;
     this.btnSebelumnya = btnSebelumnya;
     this.btnSelanjutnya = btnSelanjutnya;
@@ -100,12 +96,6 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
       id = R.id.btn_back;
       ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_dengar_suara;
-      Button btnDengarSuara = ViewBindings.findChildViewById(rootView, id);
-      if (btnDengarSuara == null) {
         break missingId;
       }
 
@@ -157,9 +147,9 @@ public final class ActivityBelajarHurufBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityBelajarHurufBinding((ScrollView) rootView, btnBack, btnDengarSuara,
-          btnResetProgress, btnSebelumnya, btnSelanjutnya, btnTandaiSelesai, ivGestureImage,
-          tvDeskripsi, tvHuruf, tvTips);
+      return new ActivityBelajarHurufBinding((ScrollView) rootView, btnBack, btnResetProgress,
+          btnSebelumnya, btnSelanjutnya, btnTandaiSelesai, ivGestureImage, tvDeskripsi, tvHuruf,
+          tvTips);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

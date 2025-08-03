@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background_purple">
+    android:background="@drawable/bg_tentang">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +53,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="24dp">
+                android:padding="24dp"
+                android:background="@color/hejo">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -65,25 +66,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="🤟"
-                        android:textSize="48sp"
-                        android:layout_marginBottom="16dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Isyarat Pintar"
+                        android:text="SIBIKU"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         android:textColor="@color/text_primary"
-                        android:layout_marginBottom="8dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/versi"
-                        android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
                         android:layout_marginBottom="8dp" />
 
                     <androidx.cardview.widget.CardView
@@ -91,7 +77,7 @@
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="12dp"
                         app:cardElevation="2dp"
-                        android:backgroundTint="@color/blue_400">
+                        android:backgroundTint="@color/hejo3">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -126,7 +112,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/deskripsi_sibi"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:lineSpacingExtra="2dp" />
 
                 </LinearLayout>
@@ -151,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fitur_1"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="4dp" />
 
                     <TextView
@@ -159,14 +145,14 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fitur_2"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="4dp" />
 
                     <TextView
                         android:layout_width="match_parent"  android:layout_height="wrap_content"
                         android:text="@string/fitur_3"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="4dp" />
 
                     <TextView
@@ -174,7 +160,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fitur_4"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="4dp" />
 
                     <TextView
@@ -182,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fitur_5"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="4dp" />
 
                     <TextView
@@ -190,7 +176,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fitur_6"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary" />
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -214,7 +200,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/deskripsi_tujuan"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:lineSpacingExtra="2dp" />
 
                 </LinearLayout>
@@ -239,7 +225,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/deskripsi_pengembang"
                         android:textSize="14sp"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/black"
                         android:lineSpacingExtra="2dp" />
 
                 </LinearLayout>
@@ -247,15 +233,15 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/text_light"
+                    android:background="@color/black"
                     android:layout_marginVertical="16dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="© 2024 Isyarat Pintar. Semua hak dilindungi."
+                    android:text="© 2025 SIBIKU. Semua hak dilindungi."
                     android:textSize="12sp"
-                    android:textColor="@color/text_light"
+                    android:textColor="@color/black"
                     android:layout_gravity="center" />
 
             </LinearLayout>
