@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DELAY = 10000; // 3 detik
+    private static final int SPLASH_DELAY = 7000; // 3 detik
     private Handler handler;
     private Runnable runnable;
 

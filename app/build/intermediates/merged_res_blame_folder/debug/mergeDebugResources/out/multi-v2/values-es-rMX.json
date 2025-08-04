@@ -4,7 +4,7 @@
             "outputFile": "com.isyaratpintar.app-mergeDebugResources-33:/values-es-rMX/values-es-rMX.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\771f44758207b7f0b849c10e0b539a77\\transformed\\core-1.40.0\\res\\values-es-rMX\\values.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\771f44758207b7f0b849c10e0b539a77\\transformed\\core-1.40.0\\res\\values-es-rMX\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

@@ -3015,6 +3015,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable b
 drawable bg
+drawable bg_ar
 drawable bg_belajar
 drawable bg_kuis
 drawable bg_tentang
@@ -3026,11 +3027,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_ar
+drawable button_benar
 drawable button_disabled
 drawable button_outline
 drawable button_primary
 drawable button_primary2
 drawable button_quiz_selector
+drawable button_salah
 drawable button_secondary
 drawable c
 drawable circle_button_background
@@ -3961,8 +3965,8 @@ string ar_instruction_3
 string ar_instruction_4
 string ar_instruction_5
 string ar_mode
-string arahkan_kamera
 string arahkan_kamera_kartu
+string arahkan_kamera_lihat_animasi
 string ayo_belajar
 string belajar_huruf
 string bottom_sheet_behavior
@@ -4045,8 +4049,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
-string mode_ar
 string mode_campuran
+string mode_realitas_tertambah
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name

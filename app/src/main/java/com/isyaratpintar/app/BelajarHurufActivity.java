@@ -16,24 +16,23 @@ import androidx.core.content.ContextCompat;
 
 import com.isyaratpintar.app.database.DatabaseHelper;
 import com.isyaratpintar.app.models.Huruf;
-import com.isyaratpintar.app.utils.SoundManager; // Tetap import jika masih digunakan di tempat lain
+import com.isyaratpintar.app.utils.SoundManager;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import android.graphics.Color;
-
+import android.graphics.Color; // Pastikan ini tetap ada
 
 public class BelajarHurufActivity extends AppCompatActivity {
 
     private ImageView ivGestureImage;
     private TextView tvHuruf, tvDeskripsi, tvTips;
-    private Button /* btnDengarSuara, */ btnTandaiSelesai, btnSebelumnya, btnSelanjutnya; // btnDengarSuara dihapus
+    private Button btnTandaiSelesai, btnSebelumnya, btnSelanjutnya;
     private ImageButton btnBack;
     private Button btnResetProgress;
 
     private DatabaseHelper databaseHelper;
-    private SoundManager soundManager; // Tetap dideklarasikan jika mungkin digunakan di luar context BelajarHuruf
+    private SoundManager soundManager;
     private List<Huruf> daftarHuruf;
     private int currentHurufIndex = 0;
 
@@ -57,7 +56,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
             "Dua jari (telunjuk dan tengah) horizontal",                        // H
             "Jari kelingking tegak",                                            // I
             "Gerakan huruf J (kelingking digerakkan melengkung)",              // J
-            "Telunjuk dan jari tengah membentuk huruf V, jempol menyilang",    // K
+            "Jari telunjuk dan jari tengah membentuk huruf V, jempol menyilang",    // K
             "Jempol dan telunjuk membentuk huruf L",                            // L
             "Tiga jari dilipat di atas ibu jari",                               // M
             "Dua jari dilipat di atas ibu jari",                                // N
@@ -90,7 +89,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
             "Tiga jari menekuk rapat di atas ibu jari.",                        // M
             "Hanya dua jari (manis dan kelingking) di atas ibu jari.",          // N
             "Bentuk tangan menjadi lingkaran penuh.",                           // O
-            "Posisikan tangan seperti membuat V terbalik menghadap bawah.",     // P
+            "Bentuk tangan menjadi lingkaran penuh.",                           // P
             "Jari membentuk lingkaran menghadap ke bawah.",                     // Q
             "Silangkan telunjuk dan tengah rapat.",                             // R
             "Jari mengepal, jempol di depan jari telunjuk.",                    // S
@@ -119,14 +118,12 @@ public class BelajarHurufActivity extends AppCompatActivity {
         tvHuruf = findViewById(R.id.tv_huruf);
         tvDeskripsi = findViewById(R.id.tv_deskripsi);
         tvTips = findViewById(R.id.tv_tips);
-        // btnDengarSuara = findViewById(R.id.btn_dengar_suara); // Baris ini dihapus
         btnTandaiSelesai = findViewById(R.id.btn_tandai_selesai);
         btnSebelumnya = findViewById(R.id.btn_sebelumnya);
         btnSelanjutnya = findViewById(R.id.btn_selanjutnya);
         btnBack = findViewById(R.id.btn_back);
         btnResetProgress = findViewById(R.id.btn_reset_progress);
 
-        // btnDengarSuara.setText(getString(R.string.dengar_suara)); // Baris ini dihapus
         btnSebelumnya.setText(getString(R.string.sebelumnya));
         btnSelanjutnya.setText(getString(R.string.selanjutnya));
         btnResetProgress.setText(getString(R.string.reset_pembelajaran));
@@ -134,15 +131,13 @@ public class BelajarHurufActivity extends AppCompatActivity {
 
     private void initData() {
         databaseHelper = new DatabaseHelper(this);
-        soundManager = new SoundManager(this); // SoundManager tetap diinisialisasi jika masih ada kebutuhan umum, jika tidak, bisa dihapus
+        soundManager = new SoundManager(this);
         daftarHuruf = createDaftarHuruf();
         Log.d("BelajarHurufActivity", "Daftar Huruf dibuat dengan " + daftarHuruf.size() + " huruf.");
     }
 
     private void setupClickListeners() {
         btnBack.setOnClickListener(v -> finish());
-
-        // btnDengarSuara.setOnClickListener(v -> playHurufSound(currentHurufIndex)); // Baris ini dihapus
 
         btnTandaiSelesai.setOnClickListener(v -> tandaiHurufSelesai(currentHurufIndex));
 
@@ -165,7 +160,7 @@ public class BelajarHurufActivity extends AppCompatActivity {
         btnResetProgress.setOnClickListener(v -> {
             AlertDialog dialog = new AlertDialog.Builder(this)
                     .setTitle("Reset Pembelajaran")
-                    .setMessage("Apakah Anda yakin ingin mereset semua progres pembelajaran dan poin? Tindakan ini tidak dapat dibatalkan.")
+                    .setMessage("Apakah kamu yakin mau mengulang semua pembelajaran huruf?")
                     .setPositiveButton("Ya, Reset", (dialogInterface, which) -> {
                         databaseHelper.resetUserProgressAndHuruf();
                         daftarHuruf = createDaftarHuruf();
@@ -176,10 +171,23 @@ public class BelajarHurufActivity extends AppCompatActivity {
                     .setNegativeButton("Batal", null)
                     .create();
 
+            // --- PERUBAHAN DIMULAI DI SINI ---
             dialog.setOnShowListener(d -> {
-                dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.BLACK); // "Ya, Reset"
-                dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.BLACK); // "Batal"
+                Button positiveButton = ((AlertDialog) d).getButton(AlertDialog.BUTTON_POSITIVE);
+                Button negativeButton = ((AlertDialog) d).getButton(AlertDialog.BUTTON_NEGATIVE);
+
+                // Set warna tombol "Ya, Reset" menjadi hijau
+                positiveButton.setTextColor(ContextCompat.getColor(BelajarHurufActivity.this, android.R.color.holo_green_dark)); // Menggunakan holo_green_dark untuk kontras yang lebih baik
+                // Atau jika Anda punya warna hijau custom di colors.xml, gunakan:
+                // positiveButton.setTextColor(ContextCompat.getColor(BelajarHurufActivity.this, R.color.nama_warna_hijau_anda));
+
+
+                // Set warna tombol "Batal" menjadi merah
+                negativeButton.setTextColor(ContextCompat.getColor(BelajarHurufActivity.this, android.R.color.holo_red_dark)); // Menggunakan holo_red_dark untuk kontras yang lebih baik
+                // Atau jika Anda punya warna merah custom di colors.xml, gunakan:
+                // negativeButton.setTextColor(ContextCompat.getColor(BelajarHurufActivity.this, R.color.nama_warna_merah_anda));
             });
+            // --- PERUBAHAN BERAKHIR DI SINI ---
 
             dialog.show();
         });
@@ -249,15 +257,6 @@ public class BelajarHurufActivity extends AppCompatActivity {
             }
         }
     }
-
-    // Metode playHurufSound dihapus karena tombol sudah tidak ada
-    /*
-    private void playHurufSound(int index) {
-        Huruf huruf = daftarHuruf.get(index);
-        soundManager.speakText("Huruf " + huruf.getNama());
-        Log.d("BelajarHurufActivity", "Memutar suara untuk huruf: " + huruf.getNama());
-    }
-    */
 
     private void tandaiHurufSelesai(int index) {
         Huruf huruf = daftarHuruf.get(index);

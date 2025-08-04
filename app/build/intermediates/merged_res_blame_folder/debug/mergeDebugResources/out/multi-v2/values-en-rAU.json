@@ -4,7 +4,24 @@
             "outputFile": "com.isyaratpintar.app-mergeDebugResources-33:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\3f7d5587fd12756ea1a34ebe85c53a99\\transformed\\appcompat-1.6.1\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\8af3ffedcd6a32f55d1ebceb0fc8d696\\transformed\\core-1.9.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "35",
+                        "startColumns": "4",
+                        "startOffsets": "3291",
+                        "endColumns": "100",
+                        "endOffsets": "3387"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\3f7d5587fd12756ea1a34ebe85c53a99\\transformed\\appcompat-1.6.1\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\771f44758207b7f0b849c10e0b539a77\\transformed\\core-1.40.0\\res\\values-en-rAU\\values.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\771f44758207b7f0b849c10e0b539a77\\transformed\\core-1.40.0\\res\\values-en-rAU\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
@@ -35,23 +52,6 @@
                         "startOffsets": "105,156,211,337,463",
                         "endColumns": "50,54,125,125,87",
                         "endOffsets": "151,206,332,458,546"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\8af3ffedcd6a32f55d1ebceb0fc8d696\\transformed\\core-1.9.0\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "35",
-                        "startColumns": "4",
-                        "startOffsets": "3291",
-                        "endColumns": "100",
-                        "endOffsets": "3387"
                     }
                 }
             ]

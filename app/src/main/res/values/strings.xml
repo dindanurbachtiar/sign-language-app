@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SIBIKU</string>
     <string name="kembali">Kembali</string>
@@ -24,7 +25,8 @@
     <string name="sudah_dipelajari">✓ Sudah Dipelajari</string>
     <string name="sebelumnya">Sebelumnya</string>
     <string name="selanjutnya">Selanjutnya</string>
-    <string name="reset_pembelajaran">Reset Pembelajaran</string> <string name="pilih_mode_kuis">Pilih Mode Kuis</string>
+    <string name="reset_pembelajaran">Reset Pembelajaran</string>
+    <string name="pilih_mode_kuis">Pilih Mode Kuis</string>
     <string name="huruf_ke_isyarat">Huruf ke Isyarat</string>
     <string name="isyarat_ke_huruf">Isyarat ke Huruf</string>
     <string name="mode_campuran">Mode Campuran</string>
@@ -34,9 +36,7 @@
 
     <string name="ar_mode">Mode AR</string>
     <string name="visualisasi_3d">Visualisasi 3D Isyarat</string>
-    <string name="mode_ar">Mode Realitas Tertambah</string>
-    <string name="arahkan_kamera">Arahkan kamera ke kartu isyarat untuk melihat animasinya</string>
-    <string name="scan_kartu">Scan Kartu</string>
+    <string name="mode_realitas_tertambah">Mode Realitas Tertambah</string> <string name="arahkan_kamera_lihat_animasi">Arahkan kamera ke kartu isyarat untuk melihat animasinya.</string> <string name="scan_kartu">Scan Kartu</string>
     <string name="pilih_huruf">Pilih Huruf (Simulasi)</string>
     <string name="scanning">Scanning...</string>
     <string name="arahkan_kamera_kartu">Arahkan kamera ke kartu huruf</string>
@@ -46,8 +46,7 @@
     <string name="animasi">Animasi</string>
     <string name="cara_menggunakan_ar">Cara Menggunakan Mode AR:</string>
     <string name="ar_instruction_1">1. Cetak kartu isyarat yang disediakan.</string>
-    <string name="ar_instruction_2">2. Pilih opsi "Scan Kartu".</string>
-    <string name="ar_instruction_3">3. Arahkan kamera ponsel Anda ke kartu yang sudah dicetak.</string>
+    <string name="ar_instruction_2">2. Pilih opsi "Scan Kartu".</string> <string name="ar_instruction_3">3. Arahkan kamera ponsel Anda ke kartu yang sudah dicetak.</string>
     <string name="ar_instruction_4">4. Tunggu hingga aplikasi mendeteksi kartu dan menampilkan animasi 3D isyarat.</string>
     <string name="ar_instruction_5">5. Anda bisa berinteraksi dengan model 3D (putar, zoom) dan mendengar suara hurufnya.</string>
 

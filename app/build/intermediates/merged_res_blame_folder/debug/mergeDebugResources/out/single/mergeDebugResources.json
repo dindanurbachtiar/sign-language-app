@@ -100,6 +100,10 @@
         "source": "com.isyaratpintar.app-main-37:/drawable/gradient_background_purple.xml"
     },
     {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_bg_ar.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/bg_ar.png"
+    },
+    {
         "merged": "com.isyaratpintar.app-debug-35:/drawable_f.png.flat",
         "source": "com.isyaratpintar.app-main-37:/drawable/f.png"
     },
@@ -236,6 +240,14 @@
         "source": "com.isyaratpintar.app-main-37:/drawable/r.png"
     },
     {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_salah.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_salah.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_ar.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_ar.xml"
+    },
+    {
         "merged": "com.isyaratpintar.app-debug-35:/drawable_n.png.flat",
         "source": "com.isyaratpintar.app-main-37:/drawable/n.png"
     },
@@ -250,6 +262,10 @@
     {
         "merged": "com.isyaratpintar.app-debug-35:/drawable_u.png.flat",
         "source": "com.isyaratpintar.app-main-37:/drawable/u.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_benar.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_benar.xml"
     },
     {
         "merged": "com.isyaratpintar.app-debug-35:/drawable_d.png.flat",

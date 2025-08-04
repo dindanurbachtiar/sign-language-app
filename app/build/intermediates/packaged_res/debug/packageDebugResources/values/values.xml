@@ -62,8 +62,8 @@
     <string name="ar_instruction_4">4. Tunggu hingga aplikasi mendeteksi kartu dan menampilkan animasi 3D isyarat.</string>
     <string name="ar_instruction_5">5. Anda bisa berinteraksi dengan model 3D (putar, zoom) dan mendengar suara hurufnya.</string>
     <string name="ar_mode">Mode AR</string>
-    <string name="arahkan_kamera">Arahkan kamera ke kartu isyarat untuk melihat animasinya</string>
     <string name="arahkan_kamera_kartu">Arahkan kamera ke kartu huruf</string>
+    <string name="arahkan_kamera_lihat_animasi">Arahkan kamera ke kartu isyarat untuk melihat animasinya.</string>
     <string name="ayo_belajar">Ayo belajar Bahasa Isyarat Indonesia (SIBI)</string>
     <string name="belajar_huruf">Belajar Huruf</string>
     <string name="cara_menggunakan_ar">Cara Menggunakan Mode AR:</string>
@@ -90,8 +90,8 @@
     <string name="isyarat_ke_huruf">Isyarat ke Huruf</string>
     <string name="kembali">Kembali</string>
     <string name="kuis">Kuis</string>
-    <string name="mode_ar">Mode Realitas Tertambah</string>
     <string name="mode_campuran">Mode Campuran</string>
+    <string name="mode_realitas_tertambah">Mode Realitas Tertambah</string>
     <string name="mulai_belajar">Mulai Belajar</string>
     <string name="pengembang">Pengembang:</string>
     <string name="pilih_huruf">Pilih Huruf (Simulasi)</string>

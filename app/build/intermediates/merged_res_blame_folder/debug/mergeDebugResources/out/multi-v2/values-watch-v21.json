@@ -4,7 +4,7 @@
             "outputFile": "com.isyaratpintar.app-mergeDebugResources-33:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\3f7d5587fd12756ea1a34ebe85c53a99\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\3f7d5587fd12756ea1a34ebe85c53a99\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

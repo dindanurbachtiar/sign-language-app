@@ -2034,8 +2034,8 @@
     <string name="ar_instruction_4">4. Tunggu hingga aplikasi mendeteksi kartu dan menampilkan animasi 3D isyarat.</string>
     <string name="ar_instruction_5">5. Anda bisa berinteraksi dengan model 3D (putar, zoom) dan mendengar suara hurufnya.</string>
     <string name="ar_mode">Mode AR</string>
-    <string name="arahkan_kamera">Arahkan kamera ke kartu isyarat untuk melihat animasinya</string>
     <string name="arahkan_kamera_kartu">Arahkan kamera ke kartu huruf</string>
+    <string name="arahkan_kamera_lihat_animasi">Arahkan kamera ke kartu isyarat untuk melihat animasinya.</string>
     <string name="ayo_belajar">Ayo belajar Bahasa Isyarat Indonesia (SIBI)</string>
     <string name="belajar_huruf">Belajar Huruf</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
@@ -2120,8 +2120,8 @@
     <string description="Suffix for time in 12-hour standard, after noon. [CHAR_LIMIT=2]" name="material_timepicker_pm">PM</string>
     <string description="Title for the dialog with a time picker. [CHAR_LIMIT=32]" name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
-    <string name="mode_ar">Mode Realitas Tertambah</string>
     <string name="mode_campuran">Mode Campuran</string>
+    <string name="mode_realitas_tertambah">Mode Realitas Tertambah</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked" translatable="false">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name" translatable="false">icon</string>

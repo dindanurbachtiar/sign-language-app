@@ -4,7 +4,7 @@
             "outputFile": "com.isyaratpintar.app-mergeDebugResources-33:/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\3f7d5587fd12756ea1a34ebe85c53a99\\transformed\\appcompat-1.6.1\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\3f7d5587fd12756ea1a34ebe85c53a99\\transformed\\appcompat-1.6.1\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\771f44758207b7f0b849c10e0b539a77\\transformed\\core-1.40.0\\res\\values-iw\\values.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\8af3ffedcd6a32f55d1ebceb0fc8d696\\transformed\\core-1.9.0\\res\\values-iw\\values-iw.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "108",
+                        "startColumns": "4",
+                        "startOffsets": "8812",
+                        "endColumns": "100",
+                        "endOffsets": "8908"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\771f44758207b7f0b849c10e0b539a77\\transformed\\core-1.40.0\\res\\values-iw\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\717a41bfcc40e0fe9cec688fa4728c26\\transformed\\material-1.10.0\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\p\\.gradle\\caches\\8.10\\transforms\\717a41bfcc40e0fe9cec688fa4728c26\\transformed\\material-1.10.0\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -54,23 +71,6 @@
                         "endLines": "6,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106",
                         "endColumns": "12,76,74,76,99,90,92,112,79,64,87,69,62,91,62,59,58,62,60,53,101,56,58,53,67,110,80,81,131,70,72,123,87,75,52,53,65,72,75,85,77,69,74,81,67,100,84,69,89,90,73,72,88,50,80,66,81,84,61,63,62,67,93,94,89,96,56,57,74",
                         "endOffsets": "356,3537,3612,3689,3789,3880,3973,4086,4166,4231,4319,4389,4452,4544,4607,4667,4726,4789,4850,4904,5006,5063,5122,5176,5244,5355,5436,5518,5650,5721,5794,5918,6006,6082,6135,6189,6255,6328,6404,6490,6568,6638,6713,6795,6863,6964,7049,7119,7209,7300,7374,7447,7536,7587,7668,7735,7817,7902,7964,8028,8091,8159,8253,8348,8438,8535,8592,8650,8725"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\8.10\\transforms\\8af3ffedcd6a32f55d1ebceb0fc8d696\\transformed\\core-1.9.0\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "108",
-                        "startColumns": "4",
-                        "startOffsets": "8812",
-                        "endColumns": "100",
-                        "endOffsets": "8908"
                     }
                 }
             ]

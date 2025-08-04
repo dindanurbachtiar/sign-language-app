@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background_gray"
+    android:background="@drawable/bg_ar"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -21,7 +21,7 @@
             android:background="@drawable/circle_button_background"
             android:src="@drawable/ic_arrow_back"
             android:contentDescription="@string/kembali"
-            app:tint="@color/white" />
+            app:tint="@color/blue_400" />
 
         <TextView
             android:layout_width="0dp"
@@ -30,7 +30,7 @@
             android:text="@string/ar_mode"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textAlignment="center" />
 
         <View
@@ -46,59 +46,118 @@
         android:layout_marginBottom="16dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="4dp"
-        android:backgroundTint="@color/white_transparent">
+        android:backgroundTint="@color/biru"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_camera"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/icon_kamera"
+            app:tint="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_realitas_tertambah" android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arahkan_kamera_lihat_animasi" android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp"
+            android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/ic_camera"
-                android:layout_marginBottom="16dp"
-                android:contentDescription="@string/icon_kamera"
-                app:tint="@color/text_secondary" />
-
-            <TextView
+            <Button
+                android:id="@+id/btn_scan_kartu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mode_ar"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/text_primary"
-                android:layout_marginBottom="8dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/arahkan_kamera"
-                android:textSize="14sp"
-                android:textColor="@color/text_secondary"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-                <Button
-                    android:id="@+id/btn_scan_kartu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/scan_kartu"
-                    android:background="@drawable/button_primary"
-                    android:textColor="@color/white"
-                    android:paddingHorizontal="32dp" />
-
-            </LinearLayout>
+                android:text="@string/scan_kartu"
+                android:background="@drawable/button_ar"
+                android:textColor="@color/white"
+                android:paddingHorizontal="32dp" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@color/biru2"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cara_menggunakan_ar"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_instruction_1"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_instruction_2"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_instruction_3"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_instruction_4"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ar_instruction_5"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -267,71 +326,6 @@
                 android:text="@string/kembali"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/button_primary"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        android:backgroundTint="@color/blue_400">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cara_menggunakan_ar"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_marginBottom="8dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ar_instruction_1"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="2dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ar_instruction_2"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="2dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ar_instruction_3"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="2dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ar_instruction_4"
-                android:textSize="12sp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="2dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ar_instruction_5"
-                android:textSize="12sp"
                 android:textColor="@color/white" />
 
         </LinearLayout>

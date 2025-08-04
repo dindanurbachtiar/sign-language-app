@@ -31,11 +31,9 @@ import java.util.Set;
 
 public class KuisActivity extends AppCompatActivity {
 
-    // Komponen UI yang tidak lagi dibutuhkan untuk pemilihan mode kuis
-    // private Button btnModeHurufKeIsyarat, btnModeIsyaratKeHuruf, btnModeCampuran;
-    // private CardView cardModeSelection; // Ini akan dihapus di XML
+    // ... (kode yang tidak berubah) ...
 
-    private CardView cardQuiz; // Hanya cardQuiz yang akan terlihat
+    private CardView cardQuiz;
     private TextView tvJudulKuis, tvPertanyaan, tvNomorSoal, tvSkor;
     private ImageView ivGambarIsyarat;
     private Button btnPilihan1, btnPilihan2, btnPilihan3, btnPilihan4;
@@ -51,13 +49,6 @@ public class KuisActivity extends AppCompatActivity {
     private boolean kuisAktif = false;
 
     private static final String[] HURUF_LENGKAP = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
-    // EMOJI_ISYARAT_LENGKAP sekarang bisa DIHAPUS karena tidak lagi digunakan
-    // Namun jika Anda ingin menggunakan emoji di tempat lain (misal di BelajarHurufActivity)
-    // biarkan saja di sana. Untuk KuisActivity ini, tidak perlu.
-    // Jika Anda ingin tombol pilihan jawaban isyarat menggunakan gambar kecil di masa depan,
-    // maka daftar ini tidak relevan lagi.
-    // Untuk saat ini, karena hanya ada mode Isyarat ke Huruf, daftar ini tidak dibutuhkan.
-    // private static final String[] EMOJI_ISYARAT_LENGKAP = { ... };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,21 +59,13 @@ public class KuisActivity extends AppCompatActivity {
         initData();
         setupClickListeners();
 
-        // Langsung mulai kuis "isyarat_ke_huruf"
-        // Ambil mode dari Intent (jika ada, meskipun kita set default)
         if (getIntent().hasExtra("kuis_mode")) {
             modeKuis = getIntent().getStringExtra("kuis_mode");
         }
-        mulaiKuis(modeKuis); // Langsung mulai dengan mode yang diinginkan
+        mulaiKuis(modeKuis);
     }
 
     private void initViews() {
-        // Komponen UI pemilihan mode yang dihapus
-        // btnModeHurufKeIsyarat = findViewById(R.id.btn_huruf_ke_isyarat);
-        // btnModeIsyaratKeHuruf = findViewById(R.id.btn_isyarat_ke_hurarat);
-        // btnModeCampuran = findViewById(R.id.btn_mode_campuran);
-        // cardModeSelection = findViewById(R.id.card_mode_selection); // Ini akan dihapus di XML
-
         cardQuiz = findViewById(R.id.card_quiz);
         tvJudulKuis = findViewById(R.id.tv_judul_kuis);
         tvPertanyaan = findViewById(R.id.tv_pertanyaan);
@@ -98,11 +81,6 @@ public class KuisActivity extends AppCompatActivity {
 
         progressKuis = findViewById(R.id.progress_kuis);
         btnBack = findViewById(R.id.btn_back);
-
-        // Teks tombol mode kuis tidak lagi diperlukan di sini karena menu mode dihapus
-        // btnModeHurufKeIsyarat.setText(getString(R.string.huruf_ke_isyarat));
-        // btnModeIsyaratKeHuruf.setText(getString(R.string.isyarat_ke_huruf));
-        // btnModeCampuran.setText(getString(R.string.mode_campuran));
     }
 
     private void initData() {
@@ -112,26 +90,20 @@ public class KuisActivity extends AppCompatActivity {
 
     private void setupClickListeners() {
         btnBack.setOnClickListener(v -> {
-            // Ketika tombol kembali di kuis aktif, tampilkan konfirmasi
             new AlertDialog.Builder(this)
                     .setTitle("Keluar Kuis")
                     .setMessage("Apakah Anda yakin ingin mengakhiri kuis ini? Skor tidak akan disimpan.")
-                    .setPositiveButton("Ya", (dialog, which) -> finish()) // Langsung keluar
+                    .setPositiveButton("Ya", (dialog, which) -> finish())
                     .setNegativeButton("Tidak", null)
                     .show();
         });
-
-        // Listener untuk tombol mode kuis dihapus karena menu mode dihapus
-        // btnModeHurufKeIsyarat.setOnClickListener(v -> mulaiKuis("huruf_ke_isyarat"));
-        // btnModeIsyaratKeHuruf.setOnClickListener(v -> mulaiKuis("isyarat_ke_huruf"));
-        // btnModeCampuran.setOnClickListener(v -> mulaiKuis("campuran"));
 
         View.OnClickListener pilihanClickListener = v -> {
             if (kuisAktif) {
                 setButtonsEnabled(false);
                 Button clickedButton = (Button) v;
                 String jawaban = clickedButton.getText().toString();
-                prosesJawaban(jawaban);
+                prosesJawaban(clickedButton, jawaban); // Kirim juga tombol yang diklik
             }
         };
 
@@ -141,28 +113,18 @@ public class KuisActivity extends AppCompatActivity {
         btnPilihan4.setOnClickListener(pilihanClickListener);
     }
 
-    // Metode showMenuKuis tidak lagi dibutuhkan karena kuis langsung dimulai
-    // private void showMenuKuis() {
-    //     kuisAktif = false;
-    //     cardModeSelection.setVisibility(View.VISIBLE);
-    //     cardQuiz.setVisibility(View.GONE);
-    //     tvJudulKuis.setText(getString(R.string.pilih_mode_kuis));
-    //     tvSkor.setText("Skor: 0");
-    // }
-
     private void mulaiKuis(String mode) {
-        modeKuis = mode; // Ini akan selalu "isyarat_ke_huruf"
+        modeKuis = mode;
         kuisAktif = true;
         currentPertanyaanIndex = 0;
         skor = 0;
 
-        // cardModeSelection.setVisibility(View.GONE); // Tidak perlu disembunyikan karena sudah dihapus
-        cardQuiz.setVisibility(View.VISIBLE); // Pastikan cardQuiz terlihat
+        cardQuiz.setVisibility(View.VISIBLE);
 
-        daftarPertanyaan = generatePertanyaan(mode); // Mode akan selalu "isyarat_ke_huruf"
+        daftarPertanyaan = generatePertanyaan(mode);
         Collections.shuffle(daftarPertanyaan);
 
-        tvJudulKuis.setText("Kuis: Isyarat ke Huruf"); // Judul langsung diset
+        tvJudulKuis.setText("Kuis: Isyarat ke Huruf");
 
         tampilkanPertanyaan();
     }
@@ -180,28 +142,18 @@ public class KuisActivity extends AppCompatActivity {
             String huruf = hurufUntukKuis.get(i);
             Pertanyaan pertanyaan = new Pertanyaan();
 
-            int gambarResIdForHuruf = getIsyaratDrawable(huruf); // Ambil gambar ID untuk huruf ini
+            int gambarResIdForHuruf = getIsyaratDrawable(huruf);
 
-            // Karena hanya ada mode "Isyarat ke Huruf"
             pertanyaan.setTipe("isyarat_ke_huruf");
             pertanyaan.setPertanyaan("Huruf apa yang ditunjukkan isyarat ini?");
             pertanyaan.setGambarResId(gambarResIdForHuruf);
-            pertanyaan.setJawabanBenar(huruf); // Jawaban benar adalah huruf (string)
-            pertanyaan.setPilihanJawaban(generatePilihanHuruf(huruf)); // Pilihan adalah huruf
+            pertanyaan.setJawabanBenar(huruf);
+            pertanyaan.setPilihanJawaban(generatePilihanHuruf(huruf));
 
             pertanyaanList.add(pertanyaan);
         }
         return pertanyaanList;
     }
-
-    // getIsyaratEmoji tidak lagi dibutuhkan dan bisa dihapus
-    // private String getIsyaratEmoji(String huruf) {
-    //     int index = Arrays.asList(HURUF_LENGKAP).indexOf(huruf.toUpperCase());
-    //     if (index != -1 && index < EMOJI_ISYARAT_LENGKAP.length) {
-    //         return EMOJI_ISYARAT_LENGKAP[index];
-    //     }
-    //     return "❓";
-    // }
 
     private int getIsyaratDrawable(String huruf) {
         int resId = getResources().getIdentifier(huruf.toLowerCase(), "drawable", getPackageName());
@@ -212,9 +164,6 @@ public class KuisActivity extends AppCompatActivity {
             return R.drawable.placeholder_sibi;
         }
     }
-
-    // generatePilihanIsyarat tidak lagi dibutuhkan dan bisa dihapus
-    // private List<String> generatePilihanIsyarat(String jawabanBenarEmoji) { ... }
 
 
     private List<String> generatePilihanHuruf(String jawabanBenarHuruf) {
@@ -237,6 +186,7 @@ public class KuisActivity extends AppCompatActivity {
         }
 
         Random random = new Random();
+        // Pastikan kita mendapatkan 4 pilihan unik
         while (pilihanSet.size() < 4) {
             String randomHuruf = HURUF_LENGKAP[random.nextInt(HURUF_LENGKAP.length)];
             pilihanSet.add(randomHuruf);
@@ -254,20 +204,17 @@ public class KuisActivity extends AppCompatActivity {
 
             tvNomorSoal.setText("Soal " + (currentPertanyaanIndex + 1) + " dari " + daftarPertanyaan.size());
             tvSkor.setText("Skor: " + skor);
-            resetButtonColors();
+            resetButtonColors(); // Reset warna tombol ke default sebelum menampilkan pertanyaan baru
             setButtonsEnabled(true);
 
-            // Selalu tampilkan ivGambarIsyarat dengan gambar isyarat atau placeholder
             ivGambarIsyarat.setVisibility(View.VISIBLE);
             ivGambarIsyarat.setImageResource(pertanyaan.getGambarResId());
             ivGambarIsyarat.setScaleType(ImageView.ScaleType.FIT_CENTER);
 
-            // Teks pertanyaan di tvPertanyaan
             tvPertanyaan.setText(pertanyaan.getPertanyaan());
-            tvPertanyaan.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16); // Ukuran default untuk teks pertanyaan
+            tvPertanyaan.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
 
-            // Karena hanya ada mode Isyarat ke Huruf, pilihan selalu huruf
-            btnPilihan1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20); // Pilihan adalah Huruf
+            btnPilihan1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             btnPilihan2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             btnPilihan3.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
             btnPilihan4.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
@@ -292,16 +239,33 @@ public class KuisActivity extends AppCompatActivity {
         }
     }
 
-    private void prosesJawaban(String jawaban) {
+    // --- PERUBAHAN DIMULAI DI SINI ---
+
+    private void prosesJawaban(Button clickedButton, String jawaban) { // Menerima Button yang diklik
         Pertanyaan pertanyaan = daftarPertanyaan.get(currentPertanyaanIndex);
         boolean benar = jawaban.equals(pertanyaan.getJawabanBenar());
 
+        // Highlight tombol yang tidak dipilih dengan warna default (cream)
+        // dan yang salah/benar dengan warnanya masing-masing
+        List<Button> allButtons = Arrays.asList(btnPilihan1, btnPilihan2, btnPilihan3, btnPilihan4);
+        String jawabanBenar = pertanyaan.getJawabanBenar();
+
+        for (Button button : allButtons) {
+            String buttonText = button.getText().toString();
+            if (buttonText.equals(jawabanBenar)) {
+                // Jawaban benar selalu hijau
+                button.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
+            } else if (button == clickedButton && !benar) {
+                // Jawaban salah yang dipilih pengguna jadi merah
+                button.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
+            } else {
+                // Jawaban yang tidak dipilih dan bukan jawaban benar, kembali ke default (cream)
+                button.setBackgroundResource(R.color.yellow_100);
+            }
+        }
+
         if (benar) {
             skor += 10;
-            highlightCorrectAnswer(jawaban);
-        } else {
-            highlightWrongAnswer(jawaban);
-            highlightCorrectAnswer(pertanyaan.getJawabanBenar());
         }
 
         new Handler().postDelayed(() -> {
@@ -310,6 +274,11 @@ public class KuisActivity extends AppCompatActivity {
         }, 1500);
     }
 
+    // Metode highlightCorrectAnswer dan highlightWrongAnswer tidak lagi dibutuhkan dan bisa dihapus
+    // private void highlightCorrectAnswer(String jawaban) { ... }
+    // private void highlightWrongAnswer(String jawaban) { ... }
+    // private Button findButtonByText(String text) { ... } // Ini juga bisa dihapus karena tidak lagi dipanggil
+
     private void setButtonsEnabled(boolean enabled) {
         btnPilihan1.setEnabled(enabled);
         btnPilihan2.setEnabled(enabled);
@@ -317,28 +286,7 @@ public class KuisActivity extends AppCompatActivity {
         btnPilihan4.setEnabled(enabled);
     }
 
-    private void highlightCorrectAnswer(String jawaban) {
-        Button button = findButtonByText(jawaban);
-        if (button != null) {
-            button.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
-        }
-    }
-
-    private void highlightWrongAnswer(String jawaban) {
-        Button button = findButtonByText(jawaban);
-        if (button != null) {
-            button.setBackgroundColor(getResources().getColor(android.R.color.holo_red_light));
-        }
-    }
-
-    private Button findButtonByText(String text) {
-        if (btnPilihan1.getText().toString().equals(text)) return btnPilihan1;
-        if (btnPilihan2.getText().toString().equals(text)) return btnPilihan2;
-        if (btnPilihan3.getText().toString().equals(text)) return btnPilihan3;
-        if (btnPilihan4.getText().toString().equals(text)) return btnPilihan4;
-        return null;
-    }
-
+    // Metode resetButtonColors tetap dibutuhkan untuk me-reset semua tombol di awal pertanyaan baru
     private void resetButtonColors() {
         btnPilihan1.setBackgroundResource(R.drawable.button_quiz_selector);
         btnPilihan2.setBackgroundResource(R.drawable.button_quiz_selector);
@@ -369,8 +317,8 @@ public class KuisActivity extends AppCompatActivity {
                 .setTitle("Hasil Kuis")
                 .setMessage("Skor Anda: " + skor + "/" + skorMaksimal + "\n" +
                         "Persentase: " + persentase + "%\n\n" + pesan)
-                .setPositiveButton("Ulangi Kuis", (dialog, which) -> mulaiKuis(modeKuis)) // Ulangi kuis yang sama
-                .setNegativeButton("Selesai", (dialog, which) -> finish()) // Ganti "Kembali ke Menu" menjadi "Selesai" dan finish()
+                .setPositiveButton("Ulangi Kuis", (dialog, which) -> mulaiKuis(modeKuis))
+                .setNegativeButton("Selesai", (dialog, which) -> finish())
                 .setCancelable(false)
                 .show();
     }
