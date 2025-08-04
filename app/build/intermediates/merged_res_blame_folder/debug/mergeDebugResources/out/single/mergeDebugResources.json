@@ -1,0 +1,262 @@
+[
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_j.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/j.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_icon_tentang.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/icon_tentang.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_activity_kuis.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_kuis.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_q.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/q.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_person.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_book.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_book.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_activity_ar_mode.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_ar_mode.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_item_huruf.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/item_huruf.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_primary.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_primary.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/xml_provider_paths.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_m.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/m.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_y.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/y.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_t.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/t.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_splash_background.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/splash_background.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_c.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/c.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_activity_tentang.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_tentang.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_icon_ar.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/icon_ar.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_info.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_disabled.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_disabled.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_b.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/b.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_bg_belajar.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/bg_belajar.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_activity_splash.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_gradient_background_purple.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/gradient_background_purple.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_f.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/f.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_p.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/p.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_bg.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/bg.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_bg_tentang.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/bg_tentang.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_z.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/z.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_i.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/i.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_s.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/s.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_gradient_background_gray.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/gradient_background_gray.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_primary2.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_primary2.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_a.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/a.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_gradient_background_green.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/gradient_background_green.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_gradient_background_cyan.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/gradient_background_cyan.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_circle_button_background.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/circle_button_background.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_l.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/l.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_activity_belajar_huruf.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_belajar_huruf.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_w.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/w.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_icon_kuis.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/icon_kuis.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_o.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/o.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_placeholder_sibi.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/placeholder_sibi.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_e.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/e.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/xml_backup_rules.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_v.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/v.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_h.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/h.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_icon_belajar.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/icon_belajar.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_camera.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_outline.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_outline.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_quiz_selector.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_quiz_selector.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_k.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/k.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_gradient_background_main.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/gradient_background_main.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_volume.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_volume.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_button_secondary.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/button_secondary.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_ic_quiz.xml.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/ic_quiz.xml"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_r.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/r.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_n.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/n.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_g.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/g.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_x.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/x.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_u.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/u.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_d.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/d.png"
+    },
+    {
+        "merged": "com.isyaratpintar.app-debug-35:/drawable_bg_kuis.png.flat",
+        "source": "com.isyaratpintar.app-main-37:/drawable/bg_kuis.png"
+    }
+]

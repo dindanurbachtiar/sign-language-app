@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#E6FFFFFF</color>
+    
+    <!-- Primary Colors -->
+    <color name="blue_400">#60A5FA</color>
+    <color name="blue_500">#3B82F6</color>
+    <color name="blue_600">#2563EB</color>
+    
+    <color name="red_400">#F87171</color>
+    <color name="red_500">#EF4444</color>
+    <color name="red_600">#DC2626</color>
+    
+    <color name="green_400">#4ADE80</color>
+    <color name="green_500">#22C55E</color>
+    <color name="green_600">#16A34A</color>
+    
+    <color name="purple_400">#A78BFA</color>
+    <color name="purple_500">#8B5CF6</color>
+    <color name="purple_600">#7C3AED</color>
+    
+    <color name="yellow_400">#FACC15</color>
+    <color name="yellow_500">#EAB308</color>
+    <color name="yellow_600">#CA8A04</color>
+    
+    <!-- Background Colors -->
+    <color name="yellow_100">#F6EEC6</color>
+    <color name="cyan_200">#A5F3FC</color>
+    <color name="cyan_300">#67E8F9</color>
+    <color name="yellow_200">#FEF08A</color>
+    <color name="yellow_300">#FDE047</color>
+    <color name="green_200">#BBF7D0</color>
+    <color name="green_300">#86EFAC</color>
+    <color name="gray_400">#9CA3AF</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="indigo_200">#C7D2FE</color>
+    <color name="indigo_300">#A5B4FC</color>
+    <color name="purple_200">#DDD6FE</color>
+    <color name="purple_300">#C4B5FD</color>
+    <color name="pink_500">#ff8580</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_light">#9CA3AF</color>
+
+
+
+    <color name="gray_300">#E0E0E0</color>
+
+    <!-- Warna Baru -->
+    <color name="bodas">#FFFCF0</color>
+    <color name="koneng">#FFF09D</color>
+    <color name="koneng2">#A68600</color>
+    <color name="biru">#D5F7FF</color>
+    <color name="biru2">#0B98AF</color>
+    <color name="berem">#F49693</color>
+    <color name="berem2">#AF2208</color>
+    <color name="hejo">#E0FF7B</color>
+    <color name="hejo2">#7D9907</color>
+    <color name="oren">#FAB5A0</color>
+    <color name="oren2">#902400</color>
+    <color name="koneng3">#F6CD42</color>
+    <color name="koneng4">#F6EEC6</color>
+    <color name="koneng5">#E5DEC0</color>
+    <color name="koneng6">#FFF09D</color>
+    <color name="pink">#FF9D8D</color>
+    <color name="pink2">#FF9F9B</color>
+    <color name="hejo3">#058105</color>
+
+
+</resources>
